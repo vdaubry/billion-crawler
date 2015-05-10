@@ -2,7 +2,7 @@
 
 require 'irb'
 
-ENV['APP_ENV'] = ARGV[0] || "development"
+ENV['APP_ENV'] ||= (ARGV[0] || "development")
 ARGV[0]=nil
 
 #Load environment variables before loading the app
