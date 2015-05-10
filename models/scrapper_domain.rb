@@ -37,6 +37,14 @@ class ScrapperDomain
     @host
   end
   
+  def add_url_to_counter(url:)
+    $redis.pfadd(ScrapperDomain.urls_counter, url)
+  end
+  
+  def count_urls
+    $redis.pfcount(ScrapperDomain.urls_counter)
+  end
+  
   
   private 
   
@@ -54,5 +62,9 @@ class ScrapperDomain
   
   def domain_urls_key
     "bc:domains:#{@host}:urls"
+  end
+  
+  def self.urls_counter
+    "bc:urls:count"
   end
 end

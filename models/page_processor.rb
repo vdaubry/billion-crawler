@@ -4,6 +4,8 @@ class PageProcessor
   end
   
   def process
-    @page.images
+    url = @page.url
+    domain = ScrapperDomain.new(host: URI.parse(url).host_with_sublevel_domain)
+    domain.add_url_to_counter(url: url)
   end
 end

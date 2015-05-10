@@ -5,10 +5,10 @@ describe PageProcessor do
   let(:page) { ScrapperPage.new(url: "http://www.google.fr") }
   
   describe "process", vcr: true do
-    it "returns all images" do
-      images = PageProcessor.new(page: page).process
-      images.count.should == 1
-      images.first.to_s.should == "http://www.google.fr/images/icons/product/chrome-48.png"
+    it "adds url to counter" do
+      PageProcessor.new(page: page).process
+      domain = ScrapperDomain.new(host: URI.parse(page.url).host_with_sublevel_domain)
+      domain.count_urls.should == 1
     end
   end
 end

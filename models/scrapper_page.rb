@@ -25,6 +25,10 @@ class ScrapperPage
     url_host == page_host
   end
   
+  def url
+    @page.uri.to_s
+  end
+  
   private
   
   def get_page(url:)
