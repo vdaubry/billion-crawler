@@ -1,11 +1,4 @@
-spec/fixtures
 coverage
-websites_test_conf.yml
-forums_test_conf.yml
-tumblr_test_conf.yml
-hosts_conf_spec.yml
-dump.*
-*.dump
 
 
 *.rbc
@@ -28,3 +21,4 @@ pickle-email-*.html
 # Ignore application configuration
 /config/application.yml
 *.dump
+*.pid
