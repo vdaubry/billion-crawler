@@ -5,6 +5,7 @@ class LinkExtractor
   
   def extract
     @page.links.each do |url|
+      #TODO: handle crawling depth, for now ignore links to external domains
       if @page.contains?(url: url)
         if ScrapperBloomFilter.new.include?(key: url)
           puts "Page already crawled : #{url}"

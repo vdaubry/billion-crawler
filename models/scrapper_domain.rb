@@ -29,6 +29,7 @@ class ScrapperDomain
     end
     
     #We use a list of urls instead of a set to reduce memory usage (The bloom filter should garanty urls uniqueness)
+    #There might be a race condition here, we tolerate some duplicate in the URL frontier
     $redis.rpush(domain_urls_key, url)
   end
   

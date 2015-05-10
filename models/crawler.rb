@@ -11,14 +11,9 @@ class Crawler
     return if domain.rate_limited?
     
     puts "Crawling #{domain.to_s}"
-    
     domain.rate_limit!
     url = domain.next_url_to_process
-    
-    byebug if url.nil?
     puts "Processing #{url}"
-    
-    
     FetchUrlWorker.perform_async(url) unless url.nil?
   end
   

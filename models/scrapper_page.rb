@@ -30,11 +30,9 @@ class ScrapperPage
   def get_page(url:)
     agent = Mechanize.new
     agent.open_timeout=5
-    
     if ENV['APP_ENV'] != 'production'
       agent.ca_file = "/usr/local/etc/openssl/certs/Equifax_Secure_Certificate_Authority.pem"
     end
-    
     agent.get(url)
   end
 end
