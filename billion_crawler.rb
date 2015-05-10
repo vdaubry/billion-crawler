@@ -4,11 +4,11 @@ if ENV['APP_ENV']!="production"
   require 'byebug' 
   require 'dotenv'
   Dotenv.load
-  require 'sidekiq/api'
 end
 
 require 'mechanize'
 require 'sidekiq'
+require 'sidekiq/api'
 require 'bloomfilter-rb'
 
 #Initializers
