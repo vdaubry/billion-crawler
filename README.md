@@ -1,0 +1,3 @@
+# billion-crawler
+
+A challenge to crawl a billion web pages. Work In Progress...
