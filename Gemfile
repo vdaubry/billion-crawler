@@ -6,6 +6,9 @@ gem 'sentry-raven',     '~> 0.13.1'
 gem 'redis',            '~> 3.2.1'
 gem 'sidekiq',          '~> 3.3.4'
 gem 'bloomfilter-rb',   '~> 2.1.1'
+gem 'eventmachine',     '~> 1.0.7'
+gem 'em-http-request',  '~> 1.1.2'
+gem 'em-hiredis',       '~> 0.3.0'
 
 group :test do
   gem 'coveralls',      '~> 0.8.1'

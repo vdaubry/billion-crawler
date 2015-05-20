@@ -1,3 +1,5 @@
+# Start sidekiq with : sidekiq -c 40 -q seed -r ./billion_crawler.rb
+
 class SeedWorker
   include Sidekiq::Worker
    sidekiq_options :queue => :seed, :retry => false, :backtrace => true
@@ -14,7 +16,7 @@ class SeedWorker
     end
   end
   
-   def measure
+  def measure
     start_time = Time.now.to_f
     
     yield
