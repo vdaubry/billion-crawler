@@ -42,7 +42,7 @@ class MeasureDomain
         puts "Error raised during event loop: #{e.message}"
       }
       
-      $redis = EM::Hiredis.connect("redis://#{ENV['REDIS_HOST']}:#{ENV['REDIS_PORT']}") 
+      $redis = EM::Hiredis.connect("redis://:#{ENV['REDIS_PASSWORD']}@#{ENV['REDIS_HOST']}:#{ENV['REDIS_PORT']}") 
       
       EM::PeriodicTimer.new(0.01) do
         EM.stop if n >= urls.size
