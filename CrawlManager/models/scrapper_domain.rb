@@ -2,8 +2,12 @@ class ScrapperDomain
   #Max 1 page per second
   RATE_LIMIT = 1
   
-  def initialize(host:)
-    @host=host
+  def initialize(host: nil, url: nil)
+    if host.nil?
+      @host=URI.parse(url).host_with_sublevel_domain
+    else
+      @host=host
+    end
   end
   
   def self.next_domain_to_process

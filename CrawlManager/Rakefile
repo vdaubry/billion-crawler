@@ -1,0 +1,27 @@
+require_relative 'billion_crawler'
+require 'bundler'
+ 
+namespace :debug do
+  
+  QUEUE_NAME = "new_urls"
+  
+  desc 'Add seed urls'
+  task :seed do
+    rabbit_client = RabbitClient.new
+
+    urls = ["http://www.wikipedia.org/"]
+    urls.each do |url|
+      puts "Add #{url} to queue"
+      rabbit_client.send(msg: {url: url}, queue_name: QUEUE_NAME)
+    end
+  end
+  
+  desc 'Empty redis and message queue'
+  task :reset do
+    puts "Empty RabbitMQ..."
+    RabbitClient.new.purge(queue_name: QUEUE_NAME)
+    
+    puts "Empty Redis..."
+    $redis.flushall
+  end
+end

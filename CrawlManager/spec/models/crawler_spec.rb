@@ -10,15 +10,19 @@ describe Crawler do
       $redis.rpush(ScrapperDomain.send(:domains_to_process_key), host)
     end
     
-    it "adds jobs from domain queue in redis" do
+    it "sends url to RabbitMQ" do
       $redis.rpush(scrapper_domain.send(:domain_urls_key), url)
-      expect {
-        Crawler.new.crawl_next_domain
-        }.to change{FetchUrlWorker.jobs.count}.by(1)
-        FetchUrlWorker.jobs.first["args"].should == [url]
+      RabbitClient.any_instance.expects(:send).with(msg: {url: url}, queue_name: "download_page")
+      Crawler.new.crawl_next_domain
     end
     
-    it "rate limits domain" do
+    it "doesn't rate limits domain if there are no url left for this domain " do
+      Crawler.new.crawl_next_domain
+      $redis.get(scrapper_domain.send(:rate_limit_key)).should be_nil
+    end
+    
+    it "rate limits domain if there are url for this domain " do
+      $redis.rpush(scrapper_domain.send(:domain_urls_key), url)
       Crawler.new.crawl_next_domain
       $redis.get(scrapper_domain.send(:rate_limit_key)).should_not be_nil
       $redis.ttl(scrapper_domain.send(:rate_limit_key)).should == 1
@@ -26,9 +30,8 @@ describe Crawler do
     
     it "skips rate limited domains" do
       $redis.setex(scrapper_domain.send(:rate_limit_key), 1, 0)
-      expect {
-        Crawler.new.crawl_next_domain
-        }.to change{FetchUrlWorker.jobs.count}.by(0)
+      Crawler.new.crawl_next_domain
+      RabbitClient.any_instance.expects(:send).never
     end
   end
 end

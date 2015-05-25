@@ -6,10 +6,10 @@ if ENV['APP_ENV']!="production"
   Dotenv.load
 end
 
-require 'mechanize'
 require 'sidekiq'
 require 'sidekiq/api'
 require 'bloomfilter-rb'
+require 'bunny'
 
 #Initializers
 require "initializers/redis"
@@ -17,12 +17,12 @@ require "initializers/sidekiq"
 require "initializers/bloom_filter"
 #Models
 require "models/crawler"
-require "models/link_extractor"
-require "models/page_processor"
-require "models/scrapper_page"
 require "models/scrapper_domain"
+require "models/rabbit_client"
+require "models/url_filter"
+require "models/url_frontier"
+require "models/discovered_url_listener"
 #Workers
-require "workers/fetch_url_worker"
 require "workers/seed_worker"
 #Lib
 require "lib/scrapper_bloom_filter"

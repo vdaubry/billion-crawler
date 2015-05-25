@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require_relative '../billion_crawler'
+
+DiscoveredUrlListener.new.listen

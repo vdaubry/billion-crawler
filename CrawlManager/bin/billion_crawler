@@ -1,7 +1,0 @@
-#!/usr/bin/env ruby
-
-require_relative '../billion_crawler'
-
-$redis.flushall
-Crawler.new.load_root_urls(urls:["http://www.wikipedia.org/"])
-Crawler.new.start

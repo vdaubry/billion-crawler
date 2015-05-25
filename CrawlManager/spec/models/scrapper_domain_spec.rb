@@ -3,6 +3,18 @@ require "spec_helper"
 describe ScrapperDomain do
   let(:host) { "google.fr" }
   let(:scrapper_domain) { ScrapperDomain.new(host: host) }
+  
+  describe "new" do
+    it "initialize a domain from a host" do
+      domain = ScrapperDomain.new(host: host)
+      domain.instance_eval { @host }.should == host
+    end
+    
+    it "initialize a domain from an url" do
+      domain = ScrapperDomain.new(url: "http://www.google.fr/about.html")
+      domain.instance_eval { @host }.should == host
+    end
+  end
     
   describe "add_url" do
     it "adds new domain to domain list" do
