@@ -9,7 +9,7 @@ namespace :debug do
   task :seed do
     rabbit_client = RabbitClient.new
 
-    urls = ["http://www.wikipedia.org/"]
+    urls = ["http://www.google.com", "http://www.wikipedia.org/"]
     urls.each do |url|
       puts "Add #{url} to queue"
       rabbit_client.send(msg: {url: url}, queue_name: QUEUE_NAME)

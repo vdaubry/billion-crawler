@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require_relative '../page_processor'
+
+Processor.new.start
