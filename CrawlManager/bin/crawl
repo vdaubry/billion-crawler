@@ -2,4 +2,4 @@
 
 require_relative '../billion_crawler'
 
-Crawler.new.start
+Crawler::Base.new.start
