@@ -1,8 +1,7 @@
 module Crawler::Interfaces
   class Downloader
     def download(url:)
-      #@rabbit_client.send(msg: {url: url}, queue_name: "download_page")
-      
+      Downloader::Base.new.download({"url": url}.to_json)
     end
   end
 end
