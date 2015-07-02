@@ -1,7 +1,7 @@
-module Downloader::Facades
+module Facades
   class Storage
     def initialize
-      @storage = Downloader::Facades::S3::Client.new(bucket_name: "youboox_dev")
+      @storage = Facades::S3::Client.new(bucket_name: "youboox_dev")
     end
     
     def store(key:, data:)

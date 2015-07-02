@@ -1,8 +1,8 @@
 require "spec_helper"
 
-describe Crawler::BloomFilter do
+describe BloomFilterFacade do
 
-  let(:bf) { Crawler::BloomFilter.new }
+  let(:bf) { BloomFilterFacade.new }
 
   describe "insert / include" do
     it "adds a new element to filter" do
@@ -12,12 +12,12 @@ describe Crawler::BloomFilter do
     end
     
     it "doesn't inserts nil" do
-      bf.insert(key: nil) rescue Crawler::InvalidKeyError
+      bf.insert(key: nil) rescue InvalidKeyError
       bf.include?(key: nil).should == false
     end
     
     it "doesn't inserts empty" do
-      bf.insert(key: "") rescue Crawler::InvalidKeyError
+      bf.insert(key: "") rescue InvalidKeyError
       bf.include?(key: "").should == false
     end
   end

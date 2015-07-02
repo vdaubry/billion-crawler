@@ -1,4 +1,4 @@
-module Processor
+module PageProcessor
   class WebPage
     def initialize(html:)
       @html = Nokogiri::HTML(html)

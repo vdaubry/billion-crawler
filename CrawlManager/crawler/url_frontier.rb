@@ -5,7 +5,7 @@ module Crawler
         Crawler::ScrapperDomain.new(url: url).add_url(url: url)
       end
       
-      Crawler::BloomFilter.new.insert(key: url)
+      BloomFilterFacade.new.insert(key: url)
     end
   end
 end

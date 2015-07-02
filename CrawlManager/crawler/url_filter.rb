@@ -23,7 +23,7 @@ module Crawler
     end
     
     def already_seen?
-      Crawler::BloomFilter.new.include?(key: @url)
+      BloomFilterFacade.new.include?(key: @url)
     end
   end
 end

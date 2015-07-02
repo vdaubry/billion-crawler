@@ -10,9 +10,9 @@ describe Crawler::Base do
       $redis.rpush(Crawler::ScrapperDomain.send(:domains_to_process_key), host)
     end
     
-    it "sends url to RabbitMQ" do
+    it "download image" do
       $redis.rpush(scrapper_domain.send(:domain_urls_key), url)
-      Crawler::Interfaces::Downloader.any_instance.expects(:download).with({url: url})
+      Downloader::Base.any_instance.expects(:download).with(url: url)
       Crawler::Base.new.crawl_next_domain
     end
     
@@ -23,6 +23,7 @@ describe Crawler::Base do
     
     it "rate limits domain if there are url for this domain " do
       $redis.rpush(scrapper_domain.send(:domain_urls_key), url)
+      Downloader::Base.any_instance.stubs(:download).returns(nil)
       Crawler::Base.new.crawl_next_domain
       $redis.get(scrapper_domain.send(:rate_limit_key)).should_not be_nil
       $redis.ttl(scrapper_domain.send(:rate_limit_key)).should == 1
@@ -31,7 +32,7 @@ describe Crawler::Base do
     it "skips rate limited domains" do
       $redis.setex(scrapper_domain.send(:rate_limit_key), 1, 0)
       Crawler::Base.new.crawl_next_domain
-      Crawler::Interfaces::Downloader.any_instance.expects(:download).never
+      Downloader::Base.any_instance.expects(:download).never
     end
   end
 end

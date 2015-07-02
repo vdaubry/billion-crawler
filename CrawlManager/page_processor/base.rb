@@ -1,23 +1,20 @@
-module Processor
+module PageProcessor
   class Base
     def initialize
-      @image_queue = Processor::Facades::Queue.new(queue_name: "image_queue")
-      @storage = Processor::Facades::Storage.new
+      @image_queue = Facades::Queue.new(queue_name: "image_queue")
+      @storage = Facades::Storage.new
     end
     
-    def process(msg:)
-      msg = JSON.parse(msg)
-      key = msg["key"]
-      
+    def process(key:)
       download_images(key: key)
       delete(key: key)
     end
     
     def download_images(key:)
       html = @storage.download(key: key)
-      images_url = Processor::WebPage.new(html: html).valid_images
+      images_url = PageProcessor::WebPage.new(html: html).valid_images
       images_url.each do |url|
-        img = Processor::Image.new(url: url)
+        img = PageProcessor::Image.new(url: url)
         data = img.download
         upload(key: img.key, data: data) unless img.known?
       end
