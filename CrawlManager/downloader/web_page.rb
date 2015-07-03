@@ -13,5 +13,10 @@ module Downloader
       path = uri.path.empty? ? "/index.html" : uri.path
       key = "#{uri.host}#{path}"
     end
+
+    def base_url
+      uri = URI.parse(@url)
+      "#{uri.scheme}://#{uri.host}"
+    end
   end
 end

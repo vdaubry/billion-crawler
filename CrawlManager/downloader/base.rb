@@ -8,21 +8,16 @@ module Downloader
     
     def download(url:)
       page = Downloader::WebPage.new(url: url)
-      store(page: page)
-      send(page: page)
+      process(page: page, base_url: page.base_url)
       extract(page: page)
     end
     
-    def store(page:)
-      @storage.store(key: page.key, data: page.data)
-    end
-    
-    def send(page:)
-      @page_processor.process(key: page.key)
+    def process(page:, base_url: )
+      @page_processor.process(html: page.data, base_url: base_url)
     end
     
     def extract(page:)
-      links = Downloader::LinkExtractor.new(html: page.data).extract
+      links = Downloader::LinkExtractor.new(html: page.data, base_url: page.base_url).extract
       links.each do |link|
         @found_url.crawl(url: link)
       end

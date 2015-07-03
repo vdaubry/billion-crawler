@@ -92,6 +92,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.2.0)
     rspec-support (3.2.2)
+    ruby-vips (0.3.9)
     safe_yaml (1.0.4)
     sentry-raven (0.13.1)
       faraday (>= 0.7.6)
@@ -138,7 +139,11 @@ DEPENDENCIES
   mocha (~> 1.1.0)
   redis (~> 3.2.1)
   rspec (~> 3.2.0)
+  ruby-vips
   sentry-raven (~> 0.13.1)
   sidekiq (~> 3.3.4)
   vcr (~> 2.9.3)
   webmock (~> 1.20.4)
+
+BUNDLED WITH
+   1.10.5

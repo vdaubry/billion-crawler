@@ -9,6 +9,7 @@ gem 'sidekiq',                  '~> 3.3.4'
 gem 'bloomfilter-rb',           '~> 2.1.1'
 gem 'aws-sdk',                  '~> 2.0.47'
 gem 'mechanize',                '~> 2.7.3'
+gem 'ruby-vips'
 
 group :test do
   gem 'coveralls',              '~> 0.8.1'

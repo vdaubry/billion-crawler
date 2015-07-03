@@ -11,6 +11,7 @@ require 'sidekiq/api'
 require 'aws-sdk'
 require 'json'
 require 'mechanize'
+require 'vips'
 
 require "initializers/redis"
 require "initializers/sidekiq"

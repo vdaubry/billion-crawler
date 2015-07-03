@@ -1,5 +1,4 @@
-
-#include VIPS
+include VIPS
 
 module Vips
   class Base
@@ -63,6 +62,7 @@ module Vips
       end
       
       def shrink_ratio
+        return 1 if @thumb_size > dimension
         (dimension / @thumb_size).to_i
       end
   end
