@@ -1,6 +1,8 @@
 module Vips
   class InMemory < Vips::Base
     def initialize(filepath:, data:, thumb_size:)
+      raise Vips::InvalidImageError, "nil image data" if data.nil?
+      
       super(filepath: filepath, thumb_size: thumb_size)
       @data = data
     end

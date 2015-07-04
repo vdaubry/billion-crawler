@@ -1,6 +1,8 @@
 include VIPS
 
 module Vips
+  class InvalidImageError < StandardError; end
+
   class Base
     attr_writer :reader
     

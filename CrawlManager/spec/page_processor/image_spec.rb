@@ -50,5 +50,12 @@ describe PageProcessor::Image, vcr: true do
         image.dimension.should == 88
       end
     end
+
+    context "image doesn't exist" do
+      it "returns nil" do
+        image = PageProcessor::Image.new(url: "http://freedomdefined.org/Resources/assets/poweredby_mediawiki_88x31.png", thumb_size: 300)
+        image.dimension.should == nil
+      end
+    end
   end
 end

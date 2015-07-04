@@ -9,7 +9,12 @@ module PageProcessor
     end
 
     def vips
-      @vips ||= Vips::InMemory.new(filepath: key, data: data, thumb_size: @thumb_size)
+      begin
+        @vips ||= Vips::InMemory.new(filepath: key, data: data, thumb_size: @thumb_size)
+      rescue Vips::InvalidImageError => e
+        $LOG.error e
+        nil
+      end
     end
     
     def thumbnail_key
@@ -19,6 +24,7 @@ module PageProcessor
     end
 
     def thumbnail_data
+      return if vips.nil?
       @thumb ||= vips.shrink!
     end
     
@@ -29,10 +35,12 @@ module PageProcessor
     end
     
     def data
-      @data ||= Mechanize.new.get(@url).body
+      @data ||= Facades::HTTPDownloadFacade.new(url: @url).download
     end
 
     def dimension
+      return if vips.nil?
+
       vips.dimension
     end
 
@@ -50,13 +58,27 @@ module PageProcessor
     end
 
     def size_too_small?
-      vips.dimension < MINIMUM_DIMENSION
+      return if vips.nil?
+      dimension < MINIMUM_DIMENSION
     end
 
     def valid?
-      puts "image too small : #{@url}" if size_too_small?
-      puts "image already seen : #{@url}" if known?
-      not known? and not size_too_small?
+      if data.nil?
+        $LOG.debug "image doesn't exist small : #{@url}"
+        return false
+      end      
+
+      if size_too_small?
+        $LOG.debug "image too small : #{@url}, dimension : #{dimension}"
+        return false
+      end
+
+      if known?
+        $LOG.debug "image already seen : #{@url}"
+        return false
+      end
+      
+      return true
     end
   end
 end

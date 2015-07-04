@@ -13,6 +13,7 @@ require 'json'
 require 'mechanize'
 require 'vips'
 
+require "initializers/logger"
 require "initializers/redis"
 require "initializers/sidekiq"
 require "initializers/bloom_filter"
@@ -21,6 +22,7 @@ require "facades/storage"
 require "facades/s3/client"
 require "facades/queue"
 require "facades/sqs/client"
+require "facades/http_download_facade"
 
 require 'crawler/crawler'
 require 'downloader/downloader'

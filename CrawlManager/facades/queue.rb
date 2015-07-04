@@ -11,7 +11,7 @@ module Facades
     end
     
     def send(msg:)
-      puts "send #{msg}"
+      $LOG.debug "send #{msg}"
       @queue.send(msg: msg)
     end
   end

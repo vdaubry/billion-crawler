@@ -7,7 +7,7 @@ module Downloader
     end
     
     def download(url:)
-      puts "Downloading #{url}"
+      $LOG.debug "Downloading #{url}"
       page = Downloader::WebPage.new(url: url)
       process(page: page, base_url: page.base_url)
       extract(page: page)
@@ -20,7 +20,7 @@ module Downloader
     def extract(page:)
       links = Downloader::LinkExtractor.new(html: page.data, base_url: page.base_url).extract
       links.each do |link|
-        puts "will crawl #{link}"
+        $LOG.debug "will crawl #{link}"
         @found_url.crawl(url: link)
       end
     end

@@ -11,6 +11,8 @@ require_relative '../billion_crawler'
 #push jobs in an array : https://github.com/mperham/sidekiq/wiki/Testing#testing-worker-queueing-fake
 Sidekiq::Testing.fake!
 
+$LOG = Logger.new('/dev/null')
+
 VCR.configure do |config|
   config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
   config.hook_into :webmock # or :fakeweb

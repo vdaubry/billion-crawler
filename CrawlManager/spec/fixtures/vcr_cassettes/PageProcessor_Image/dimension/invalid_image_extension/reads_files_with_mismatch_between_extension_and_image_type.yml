@@ -1,0 +1,100 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://i.ytimg.com/i/-9-kyTW8ZkZNDHQJ6FgpwQ/1.jpg
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.3 Ruby/2.2.2p95 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - i.ytimg.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - image/png
+      Last-Modified:
+      - Sat, 04 Jul 2015 07:40:58 GMT
+      Date:
+      - Sat, 04 Jul 2015 07:40:58 GMT
+      Expires:
+      - Sat, 04 Jul 2015 13:40:58 GMT
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - sffe
+      Content-Length:
+      - '1783'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - public, max-age=21600
+      Age:
+      - '8101'
+      Alternate-Protocol:
+      - 80:quic,p=0
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        iVBORw0KGgoAAAANSUhEUgAAAFgAAABYCAMAAABGS8AGAAAACXBIWXMAAAAc
+        AAAAHAAPAbmPAAADAFBMVEXlLij////rRT/tTUfrR0H//PztTEbsSUPsS0Xr
+        UEvsSELrRkDrRD7qQjzqQDrnNS/mMizmMSvpPznqQz3nNzHtU036z87vdXH+
+        +Pjxf3vxfnrxfHj++/vrUUzsSkTqQTvpPjjoODL2qqfoOjTpPDbpPTfnMy3n
+        NC7nNjDoOTPqPznrQz3pOzXoOzXmMy3oNzH++fn0kY360dD73dz+9/f++vr0
+        l5P3s7HuZWD3tLL3tbPwbGf61dT97+/+9PT71tXyf3v98fH2r6z84+L85OP1
+        qKX6zMr5y8n5ysn5ysjxi4jzjYnyiYXzi4fpQTvtS0XmMCrlLynlLSfziob5
+        ycjucGz85OTxfXn+8vLsR0H719bmLyn4uLb0mpfvYlzyhIHvd3PuW1Xwenb9
+        6+vsU03tVlHtV1HtVE7tU07++vntVVDsVVDwc2/rWVTnPDfxhoLxhoPyhoL0
+        lZLzlJHzk5D4vbvzkY70kY7vdXD3s7D1n5z73Nr72djvZF7tWVTtWlTuWlTu
+        XVjxhYHxhYLwhYHwhIDyhID3u7n60tHudnLvdnL3tLHveHTveXXuZmH0n5zv
+        ZWDvZmHud3PuX1rtX1r+9vbzmZb0mZb4urj609L61NP3trPxenb1nZr1nJn0
+        nJn0nZnsYl7tY17tYVzuY17wbWj+9fX+9vX3t7X97+7wb2r97u7xgHzwgn/+
+        8/Pwe3fvenb98PD+8fD+8vH+8/LuaGTxe3fwd3PveXT1oZ31oZ72sK72sK3w
+        fHjwenXvbGfwdnLtbWntbmr2r6396un96+rtb2vxdHD96ej86Of1p6T84uH2
+        p6X2q6j2rKn85+b85uXudHDvc2/tcGvucGv73t32qKXvdHDucW3ucm7vcm7v
+        cGz1qaf2qafzkIzykI34vrz6zsz5ycf4ycf5yMb5x8X6ysn5yMf4yMf4w8L4
+        xsXyh4Pxh4Txh4PyiITxiITzjovxiYbxiYXxiIXyiYbyiobnOTPnOjTmMSzn
+        ODLpSEPqU07oQjzpQDrrUk3rSkS2kp5IAAADnUlEQVR42u39ZXQcNxhFAWjR
+        bDabzWaz2Wy2Uy6Xy+VyuVwul8vlcrlcLofD4XA4HA5+0oyk2dFMsgrfn3rv
+        3bNnd2B/IpskDogVsVMSB8SKeIAk5Ik9JYHiJWFM7Hl6TXRP+fMvlPc0vn6G
+        p5vEZzYmh79tUVEXPiE6bGfFZy1uP9uiQWFXX5xA7KHDCVe/YXHJp8kn6211
+        xDc9G2vRpfS/MB2xtwviiz6zCPnrC1dzb1fic6ZbDPG/pznxw4Pp/Sfh915z
+        Zd+hRV8fd0wkncyMcyE+Wot3jlJNHVMuud5DyWx/DvxNbW4I01Roimvqld27
+        39zI5R5RT6vMd9k0xXaeR5X7of5Fm12TmFbFPFmrgHw4bCVkMusGH1fYmhXz
+        pRq5hriafLlP2n10uLgQFyNf0xBbWZ4jt22UVZ+fSnG12M6FnNiJL7TYGKuI
+        GAc23yEWv4S7E61ijsflFm9O7Evjha/gp3wNYG3H5hPZiBXjD3yqlxGx7834
+        PmzgxDkU9t+hOC/HGCPxR36ICVAIRTTURlhDjHEavjLamAD5UcyB2kI/o1TB
+        4ogQ+pwWO+Era7IbFv+Iv4vH9MRRUKrwM87fsLmCESeoqYDSlwnG+RY2l9PH
+        tPjf7Z0yDxPi90Dcyoj9VXhBp9bfBOfiR9Ym6pgSnwed78yI/T+GVSUtzlZx
+        GX5MZJsBv02OpE5RsIpfoXJPsBnuhNUk6hQlqpgBlVcTzdAGqwepU0p8HVQ2
+        mhI/AavxrsWDoPJARO+4Dcasr/T+8A+smmlxmkJ/neqlfm1cmpjgt1SL6n51
+        pIgrix3UX5wqA+IIauF45nOVOBVwfsD8K+tIFbOC2bzpRSIiHmVxg9jyoSLO
+        BSI4ca6Y5ezoexKhPIAX54lZwolJhFKAq9hOZ4qYpZyYRPLEWQD343VmiVnG
+        /XgkkidOAoayna4kMYs4MYncLD7FTeL5OuICYCwnLhCzgBOTCIUCYzhxqBhO
+        /BGJUCbAiQ/LFHMRO7qfRPLEAcBoThwg5kJ29BWJ3Cy+bxeIM4DD2c7UDDG3
+        cmISyROnA7w4Xcwt7OgkEhHx8B0R36YjzgeGsZ1p+WI48SMkQoHAH2xndqCY
+        29nR3SQi4p/ZzlwD4vfZ0RBevL6J6XQbEK8rozePr1XEQZjzOyIdhNiW7sAg
+        A/xSov6LVfuykiBVK2ANIdSQdgurV11AWKkOUJAk0EGS2AvFx0oCHSwJeeID
+        7MUcIglp4s01QmbNomMLigAAAABJRU5ErkJggg==
+    http_version: 
+  recorded_at: Tue, 19 Oct 2010 22:00:00 GMT
+recorded_with: VCR 2.9.3

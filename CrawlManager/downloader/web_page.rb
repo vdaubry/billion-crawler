@@ -5,7 +5,7 @@ module Downloader
     end
     
     def data
-      Mechanize.new.get(@url).body
+      Facades::HTTPDownloadFacade.new(url: @url).download
     end
     
     def key

@@ -6,12 +6,12 @@ module Crawler
     
     def valid_url?
       if malformed?
-        puts "Cannot add url to the frontier : #{@url} is not a valid url"
+        $LOG.debug "Cannot add url to the frontier : #{@url} is not a valid url"
         return false
       end
       
       if already_seen?
-        puts "Cannot add url to the frontier : #{@url} has already been crawled"
+        $LOG.debug "Cannot add url to the frontier : #{@url} has already been crawled"
         return false
       end
       
