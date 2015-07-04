@@ -6,6 +6,14 @@ module Vips
       super(filepath: filepath, thumb_size: thumb_size)
       @thumbpath = thumbpath
     end
+
+    def jpg?
+      extension == "jpg" || extension == "jpeg"
+    end
+    
+    def png?
+      extension == "png"
+    end
     
     def open(shrink:)
       self.reader = if jpg?

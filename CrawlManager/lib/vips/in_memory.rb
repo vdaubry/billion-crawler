@@ -4,6 +4,14 @@ module Vips
       super(filepath: filepath, thumb_size: thumb_size)
       @data = data
     end
+
+    def jpg?
+      return @data[0,2]==0xff.chr + 0xd8.chr
+    end
+    
+    def png?
+      return @data[0,2]==0x89.chr + "P"
+    end
     
     def open(shrink:)
       self.reader = if jpg?

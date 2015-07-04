@@ -6,7 +6,7 @@ module Downloader
     end
     
     def extract
-      @html.xpath("//a").map { |l| URI.join(@base_url, l['href']).to_s  if l['href'] }.compact
+      @html.xpath("//a").map { |l| URI.join(@base_url, URI.encode(l['href'])).to_s  if l['href'] }.compact
     end
   end
 end

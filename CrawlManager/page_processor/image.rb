@@ -32,6 +32,10 @@ module PageProcessor
       @data ||= Mechanize.new.get(@url).body
     end
 
+    def dimension
+      vips.dimension
+    end
+
     def hash
       Digest::MD5.hexdigest(data)
     end
@@ -50,6 +54,8 @@ module PageProcessor
     end
 
     def valid?
+      puts "image too small : #{@url}" if size_too_small?
+      puts "image already seen : #{@url}" if known?
       not known? and not size_too_small?
     end
   end

@@ -13,14 +13,6 @@ module Vips
       @filepath.split(".").last
     end
     
-    def jpg?
-      extension == "jpg" || extension == "jpeg"
-    end
-    
-    def png?
-      extension == "png"
-    end
-    
     def dimension
       [reader.x_size, reader.y_size].max
     end

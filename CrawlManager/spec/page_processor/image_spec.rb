@@ -42,4 +42,13 @@ describe PageProcessor::Image, vcr: true do
       image.known?.should == true
     end    
   end
+
+  describe "dimension" do
+    context "invalid image extension" do
+      it "reads files with mismatch between extension and image type" do
+        image = PageProcessor::Image.new(url: "http://i.ytimg.com/i/-9-kyTW8ZkZNDHQJ6FgpwQ/1.jpg", thumb_size: 300)
+        image.dimension.should == 88
+      end
+    end
+  end
 end
