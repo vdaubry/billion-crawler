@@ -24,4 +24,8 @@ describe PageProcessor::WebPage do
       web_page.exclude_already_seen(images: images).should == ["http://www.google.fr/test.jpg"]
     end
   end
+
+  describe "title" do
+    it { web_page.title.should == "Google" }
+  end
 end

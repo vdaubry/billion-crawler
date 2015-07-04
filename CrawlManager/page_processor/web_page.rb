@@ -5,6 +5,10 @@ module PageProcessor
       @base_url = base_url
       @bloom_filter = BloomFilterFacade.new
     end
+
+    def title
+      @html.title
+    end
     
     def all_images
       @html.xpath("//img").map {|l| URI.join(@base_url, l['src']).to_s  if l['src'] }.compact
