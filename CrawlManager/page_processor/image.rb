@@ -1,9 +1,15 @@
 module PageProcessor
   class Image
+    MINIMUM_DIMENSION = 300
+
     def initialize(url:, thumb_size: 300)
-      @uri = URI.parse(url)
+      @url = url
       @thumb_size = thumb_size
       @bloom_filter = BloomFilterFacade.new
+    end
+
+    def vips
+      @vips ||= Vips::InMemory.new(filepath: key, data: data, thumb_size: @thumb_size)
     end
     
     def thumbnail_key
@@ -13,27 +19,17 @@ module PageProcessor
     end
 
     def thumbnail_data
-      return @thumb unless @thumb.nil?
-
-      @thumb = Vips::InMemory.new(filepath: key, data: data, thumb_size: @thumb_size)
-      @thumb.shrink!
+      @thumb ||= vips.shrink!
     end
     
     def key
       inverted_timestamp = Time.now.to_i.to_s.reverse
-      path = File.basename(@uri.path)
+      path = File.basename(URI.parse(@url).path)
       "#{inverted_timestamp}_#{path}"
     end
     
     def data
-      return @data unless @data.nil?
-
-      http = Net::HTTP.new(@uri.host, @uri.port)
-      http.use_ssl = true if @uri.scheme == "https"
-      req = Net::HTTP::Get.new(@uri.request_uri)
-      response = http.request(req)
-      @data = response.body 
-      @data
+      @data ||= Mechanize.new.get(@url).body
     end
 
     def hash
@@ -47,6 +43,14 @@ module PageProcessor
 
     def known!
       @bloom_filter.insert(key: hash)
+    end
+
+    def size_too_small?
+      vips.dimension < MINIMUM_DIMENSION
+    end
+
+    def valid?
+      not known? and not size_too_small?
     end
   end
 end

@@ -9,7 +9,7 @@ module PageProcessor
       images_url = PageProcessor::WebPage.new(html: html, base_url: base_url).valid_images
       images_url.each do |url|
         image = PageProcessor::Image.new(url: url)
-        unless image.known?
+        if image.valid?
           upload(image: image)
           image.known!
         end
