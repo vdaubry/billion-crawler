@@ -51,3 +51,4 @@ _testmain.go
 
 .DS_Store
 rules.yml
+spec/local_spec/*

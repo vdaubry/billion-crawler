@@ -13,13 +13,18 @@ describe PageProcessor::Base, vcr: true do
         processor.process(html: html, base_url: "http://techslides.com")
       end
 
-      it "sets image as already seen" do
-        PageProcessor::Image.any_instance.expects(:known!).times(1)
+      it "sets all images hash as already seen" do
+        PageProcessor::Image.any_instance.expects(:known!).times(10)
         processor.process(html: html, base_url: "http://techslides.com")
       end
 
       it "sends a message to the queue" do
         Facades::Queue.any_instance.expects(:send).times(1)
+        processor.process(html: html, base_url: "http://techslides.com")
+      end
+
+      it "sets all images urls as already seen" do
+        PageProcessor::WebPage.any_instance.expects(:already_seen!).times(1)
         processor.process(html: html, base_url: "http://techslides.com")
       end
     end

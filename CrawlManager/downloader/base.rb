@@ -10,18 +10,18 @@ module Downloader
       $LOG.debug "Downloading #{url}"
       page = Downloader::WebPage.new(url: url)
       process(page: page, base_url: page.base_url)
-      extract(page: page)
+      extract(page: page, url: url)
     end
     
     def process(page:, base_url: )
       @page_processor.process(html: page.data, base_url: base_url)
     end
     
-    def extract(page:)
+    def extract(page:, :url)
       links = Downloader::LinkExtractor.new(html: page.data, base_url: page.base_url).extract
       links.each do |link|
         $LOG.debug "will crawl #{link}"
-        @found_url.crawl(url: link)
+        @found_url.crawl(current_url: link, parent_url: url)
       end
     end
   end

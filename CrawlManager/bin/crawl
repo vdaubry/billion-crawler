@@ -3,5 +3,4 @@
 require_relative '../billion_crawler'
 
 $LOG.level = Logger::DEBUG
-Crawler::ScrapperDomain.new(host: "google.fr").add_url(url: "http://www.google.fr")
 Crawler::Base.new.start

@@ -1,6 +1,6 @@
 module Rules
   class Parser
-    def initialize(yaml: "config/rules.yaml")
+    def initialize(yaml: "config/rules.yml")
       @yaml = YAML.load_file(yaml)
     end
 
@@ -10,6 +10,8 @@ module Rules
         whitelist = conf["whitelist"].to_json if conf && conf["whitelist"]
 
         Rules::HostConfig.new(host: host).set_rules(blacklist: blacklist, whitelist: whitelist)
+        $LOG.debug "Loaded host : #{host} , blacklist: #{blacklist}"
+        $LOG.debug "Loaded host : #{host} , whitelist: #{whitelist}"
       end
     end
   end

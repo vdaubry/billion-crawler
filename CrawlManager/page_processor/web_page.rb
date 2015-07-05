@@ -11,7 +11,7 @@ module PageProcessor
     end
     
     def all_images
-      @html.xpath("//img").map {|l| URI.join(@base_url, l['src']).to_s  if l['src'] }.compact
+      @images ||= @html.xpath("//img").map {|l| URI.join(@base_url, l['src']).to_s  if l['src'] }.compact
     end
     
     def filter_by_extensions(images:)
@@ -21,6 +21,10 @@ module PageProcessor
     #Exclude images based on unique url
     def exclude_already_seen(images:)
       images.reject {|src| @bloom_filter.include?(key: src) }
+    end
+
+    def already_seen!
+      all_images.each { |src| @bloom_filter.insert(key: src) }
     end
     
     # def exclude_small_images(images:)

@@ -13,9 +13,12 @@ module PageProcessor
         image = PageProcessor::Image.new(url: url)
         if image.valid?
           upload(image: image, base_url: base_url)
-          image.known!
         end
+        #set images Hash as already seen (avoid duplicates with different urls)
+        image.known!
       end
+      #set images url as already seen
+      @page.already_seen!
     end
     
     def upload(image:, base_url:)
