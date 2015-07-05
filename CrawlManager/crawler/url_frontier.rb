@@ -1,7 +1,7 @@
 module Crawler
   class UrlFrontier
-    def add(current_url:, parent_url:)
-      url = Crawler::Url.new(current_url: current_url, parent_url: parent_url)
+    def add(url:, parent_url:, current_depth:)
+      url = Crawler::Url.new(current_url: url, parent_url: parent_url, current_depth: current_depth)
 
       if Crawler::UrlFilter.new(url: url).valid_url?
         url.save

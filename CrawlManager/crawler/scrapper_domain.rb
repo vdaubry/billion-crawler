@@ -24,7 +24,8 @@ module Crawler
     end
     
     def next_url_to_process
-      $redis.lpop(domain_urls_key)
+      url_str = $redis.lpop(domain_urls_key)
+      Crawler::Url.find(url: url_str)
     end
     
     def add_url(url:)

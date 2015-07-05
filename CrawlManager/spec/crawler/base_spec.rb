@@ -11,8 +11,8 @@ describe Crawler::Base do
     end
     
     it "download image" do
-      $redis.rpush(scrapper_domain.send(:domain_urls_key), url)
-      Downloader::Base.any_instance.expects(:download).with(url: url)
+      Crawler::UrlFrontier.new.add(url: url, parent_url: nil, current_depth: 0)
+      Downloader::Base.any_instance.expects(:download).with(url: url, current_depth: 0)
       Crawler::Base.new.crawl_next_domain
     end
     
@@ -22,7 +22,7 @@ describe Crawler::Base do
     end
     
     it "rate limits domain if there are url for this domain " do
-      $redis.rpush(scrapper_domain.send(:domain_urls_key), url)
+      Crawler::UrlFrontier.new.add(url: url, parent_url: nil, current_depth: 0)
       Downloader::Base.any_instance.stubs(:download).returns(nil)
       Crawler::Base.new.crawl_next_domain
       $redis.get(scrapper_domain.send(:rate_limit_key)).should_not be_nil

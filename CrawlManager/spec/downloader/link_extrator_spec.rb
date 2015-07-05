@@ -6,14 +6,14 @@ describe Downloader::LinkExtractor do
       html = File.read("spec/fixtures/html_sample/google.fr.html")
       extractor = Downloader::LinkExtractor.new(html: html, base_url: "http://www.google.fr")
       links = extractor.extract
-      links.count.should == 15
-      links.first.should == "https://www.google.fr/imghp?hl=en&tab=wi&ei=N1mWVeqxHIvbU9r8gdAC&ved=0CBAQqi4oAQ"
+      links.count.should == 32
+      links.first.should == "https://mail.google.com/mail/?tab=wm"
     end
 
     it "returns links from page with special char in links" do
       html = File.read("spec/fixtures/html_sample/creativecommons.org.html")
       extractor = Downloader::LinkExtractor.new(html: html, base_url: "http://creativecommons.org")
-      extractor.extract.count.should == 14
+      extractor.extract.count.should == 15
     end
   end
 
@@ -28,13 +28,9 @@ describe Downloader::LinkExtractor do
     it "forbids not http link" do
       extractor.url_valid?(url: "ftp://google.fr/foo").should == false
     end
-
-    it "forbids invalid http link" do
-      extractor.url_valid?(url: "http://google").should == false
-    end
-
-    it "forbids links to outside host" do
-      extractor.url_valid?(url: "http://foo.bar").should == false
+    
+    it "allows links to outside host" do
+      extractor.url_valid?(url: "http://foo.bar").should == true
     end
 
     it "allow url on same host" do

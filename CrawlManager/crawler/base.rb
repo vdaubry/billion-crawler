@@ -20,7 +20,8 @@ module Crawler
       
       $LOG.debug "Allow crawling URL : #{url} from domain : #{domain.to_s}"
       domain.rate_limit!
-      @downloader.download(url: url)
+
+      @downloader.download(url: url.to_s, current_depth: url.current_depth )
     end
   end
 end

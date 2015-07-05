@@ -7,12 +7,12 @@ describe Downloader::Base, vcr: true do
   describe "download" do
     it "calls process page" do
       PageProcessor::Base.any_instance.expects(:process)
-      downloader.download(url: "http://www.google.fr")
+      downloader.download(url: "http://www.google.fr", current_depth: 0)
     end
 
     it "crawls news links from page" do
-      Crawler::FoundUrl.any_instance.expects(:crawl).times(7)
-      downloader.download(url: "http://www.google.fr")
+      Crawler::UrlFrontier.any_instance.expects(:add).times(13)
+      downloader.download(url: "http://www.google.fr", current_depth: 0)
     end
   end
 end
