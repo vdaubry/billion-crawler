@@ -31,5 +31,7 @@ require 'page_processor/page_processor'
 require "lib/vips/base"
 require "lib/vips/in_memory"
 require "lib/bloom_filter_facade"
+require "lib/rules/parser"
+require "lib/rules/host_config"
 
 require "lib/extensions/uri"

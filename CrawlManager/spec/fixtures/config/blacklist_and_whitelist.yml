@@ -1,0 +1,7 @@
+techcrunch.com:
+  blacklist: 
+    - "/startup/"
+    - "/mobile/"
+  whitelist:
+    - "/gadgets/"
+    - "/mobile/"
