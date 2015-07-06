@@ -33,5 +33,6 @@ require "lib/vips/in_memory"
 require "lib/bloom_filter_facade"
 require "lib/rules/parser"
 require "lib/rules/host_config"
-
+require "lib/safe_uri"
 require "lib/extensions/uri"
+

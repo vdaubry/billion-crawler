@@ -11,7 +11,7 @@ module PageProcessor
     end
     
     def all_images
-      @images ||= @html.xpath("//img").map {|l| URI.join(@base_url, l['src']).to_s  if l['src'] }.compact
+      @images ||= @html.xpath("//img").map {|l| SafeUri.join(base_url: @base_url, path: l['src']).to_s }.compact
     end
     
     def filter_by_extensions(images:)
