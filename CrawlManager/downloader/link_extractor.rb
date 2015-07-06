@@ -11,7 +11,7 @@ module Downloader
         begin
           URI.join(@base_url, URI.encode(l['href'])).to_s if l['href']
         rescue URI::InvalidURIError => e
-          puts e
+          $LOG.error e
           nil
         end
       end.compact

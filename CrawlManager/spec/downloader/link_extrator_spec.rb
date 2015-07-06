@@ -15,5 +15,12 @@ describe Downloader::LinkExtractor do
       extractor = Downloader::LinkExtractor.new(html: html, base_url: "http://creativecommons.org")
       extractor.extract.count.should == 61
     end
+
+    it "ignores invalid URI" do
+      html = File.read("spec/fixtures/html_sample/creativecommons.org.html")
+      extractor = Downloader::LinkExtractor.new(html: html, base_url: "http://creativecommons.org")
+      URI.stubs(:join).raises(URI::InvalidURIError)
+      extractor.extract.count.should == 0
+    end
   end
 end
