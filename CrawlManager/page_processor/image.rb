@@ -40,7 +40,7 @@ module PageProcessor
 
     def dimension
       return if vips.nil?
-
+      
       vips.dimension
     end
 
@@ -58,13 +58,12 @@ module PageProcessor
     end
 
     def size_too_small?
-      return if vips.nil?
       dimension < MINIMUM_DIMENSION
     end
 
     def valid?
-      if data.nil?
-        $LOG.debug "image doesn't exist small : #{@url}"
+      if data.nil? || vips.nil? || !vips.valid?
+        $LOG.debug "image doesn't exist : #{@url}"
         return false
       end      
 

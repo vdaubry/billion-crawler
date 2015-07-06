@@ -18,6 +18,10 @@ module Vips
     def dimension
       [reader.x_size, reader.y_size].max
     end
+
+    def valid?
+      !reader.nil?
+    end
     
     def shrink!(should_sharpen: true)
       jpeg_shrink! if jpg?
