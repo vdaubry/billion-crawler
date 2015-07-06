@@ -10,7 +10,7 @@ module Downloader
       @html.xpath("//a").map do |l| 
         begin
           URI.join(@base_url, URI.encode(l['href'])).to_s if l['href']
-        rescue URI::InvalidURIError => e
+        rescue URI::InvalidURIError, NoMethodError => e
           $LOG.error e
           nil
         end
