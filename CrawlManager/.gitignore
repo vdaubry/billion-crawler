@@ -52,3 +52,4 @@ _testmain.go
 .DS_Store
 rules.yml
 spec/local_spec/*
+spec/fixtures/vcr_cassettes/Downloader_Base/crawl/*

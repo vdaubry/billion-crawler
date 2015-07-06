@@ -6,35 +6,14 @@ describe Downloader::LinkExtractor do
       html = File.read("spec/fixtures/html_sample/google.fr.html")
       extractor = Downloader::LinkExtractor.new(html: html, base_url: "http://www.google.fr")
       links = extractor.extract
-      links.count.should == 32
-      links.first.should == "https://mail.google.com/mail/?tab=wm"
+      links.count.should == 45
+      links.first.should == "http://www.google.fr/setprefs?suggon=2&prev=https://www.google.fr/webhp?hl%253Den&sig=0_UP1o-z2PkxIhw6q5WnhfGhV_mF4%253D"
     end
 
     it "returns links from page with special char in links" do
       html = File.read("spec/fixtures/html_sample/creativecommons.org.html")
       extractor = Downloader::LinkExtractor.new(html: html, base_url: "http://creativecommons.org")
-      extractor.extract.count.should == 15
-    end
-  end
-
-  describe "url_valid?" do
-    let(:extractor) { Downloader::LinkExtractor.new(html: "", base_url: "http://google.fr") }
-    
-    it "allows valid http / https link" do
-      extractor.url_valid?(url: "http://google.fr/foo").should == true
-      extractor.url_valid?(url: "https://google.fr/foo").should == true
-    end
-
-    it "forbids not http link" do
-      extractor.url_valid?(url: "ftp://google.fr/foo").should == false
-    end
-    
-    it "allows links to outside host" do
-      extractor.url_valid?(url: "http://foo.bar").should == true
-    end
-
-    it "allow url on same host" do
-      extractor.url_valid?(url: "http://www.google.fr/setprefs?suggon=2&prev=https://www.google.fr/webhp?hl%253Den&sig=0_UP1o-z2PkxIhw6q5WnhfGhV_mF4%253D").should == true
+      extractor.extract.count.should == 61
     end
   end
 end

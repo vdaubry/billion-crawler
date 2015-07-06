@@ -1,4 +1,4 @@
 techcrunch.com:
   whitelist:
-    - "/gadgets/"
-    - "/inside-jobs/"
+    - gadgets
+    - inside-jobs

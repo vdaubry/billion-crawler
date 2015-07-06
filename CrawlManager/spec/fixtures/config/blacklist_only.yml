@@ -1,4 +1,4 @@
 techcrunch.com:
   blacklist: 
-    - "/startup/"
-    - "/mobile/"
+    - startup
+    - mobile

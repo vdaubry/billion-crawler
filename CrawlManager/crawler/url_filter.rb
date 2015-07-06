@@ -1,7 +1,7 @@
 module Crawler  
   class UrlFilter
-    def initialize(url:, max_depth: 1)
-      @max_depth = max_depth
+    def initialize(url:)
+      @max_depth = Crawler::Configuration.get(property_name: "max_depth")
       @url = url
     end
     
@@ -12,7 +12,7 @@ module Crawler
       end
       
       if already_seen?
-        $LOG.debug "Cannot add url to the frontier : #{@url} has already been crawled"
+        $LOG.debug "Cannot add url to the frontier : #{@url} has already been added to the frontier"
         return false
       end
 

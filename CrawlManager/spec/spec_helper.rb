@@ -1,9 +1,6 @@
 require 'vcr'
-require 'coveralls'
 require 'stub_chain_mocha'
-require 'dotenv'
 require 'sidekiq/testing'
-Coveralls.wear!
 ENV["APP_ENV"]="test"
 
 require_relative '../billion_crawler'
@@ -15,7 +12,7 @@ $LOG = Logger.new('/dev/null')
 
 VCR.configure do |config|
   config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
-  config.hook_into :webmock # or :fakeweb
+  config.hook_into :webmock
   config.default_cassette_options = { :record => :new_episodes }
   config.configure_rspec_metadata!
 end

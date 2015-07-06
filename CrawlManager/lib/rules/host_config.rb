@@ -14,7 +14,7 @@ module Rules
       url.match(blacklist_regex) != nil
     end
 
-    def url_allowed?(url:)
+    def url_allowed?(url:)      
       unless whitelist.nil?
         return in_whitelist?(url: url)
       end
@@ -34,7 +34,7 @@ module Rules
 
       def list_from_redis(key:)
         value = $redis.hget(host_key, key)
-        (value.nil? || value.empty?) ? nil : JSON.parse(value)
+        (value.nil? || value.empty?) ? nil : JSON.parse(value).map {|r| /#{r}/}
       end
 
       def whitelist

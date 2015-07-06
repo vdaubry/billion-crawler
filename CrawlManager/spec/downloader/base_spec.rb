@@ -11,7 +11,7 @@ describe Downloader::Base, vcr: true do
     end
 
     it "crawls news links from page" do
-      Crawler::UrlFrontier.any_instance.expects(:add).times(13)
+      Crawler::UrlFrontier.any_instance.expects(:add).times(22)
       downloader.download(url: "http://www.google.fr", current_depth: 0)
     end
   end
