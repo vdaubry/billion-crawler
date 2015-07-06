@@ -9,12 +9,12 @@ module Downloader
     def download(url:, current_depth:)
       $LOG.debug "Downloading #{url}"
       page = Downloader::WebPage.new(url: url)
-      process(page: page, base_url: page.base_url)
+      process(page: page, base_url: page.base_url, url: url)
       extract(page: page, url: url, current_depth: current_depth)
     end
     
-    def process(page:, base_url: )
-      @page_processor.process(html: page.data, base_url: base_url)
+    def process(page:, base_url:, url:)
+      @page_processor.process(html: page.data, base_url: base_url, url: url)
     end
     
     def extract(page:, url:, current_depth:)

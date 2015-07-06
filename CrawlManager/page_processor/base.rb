@@ -3,9 +3,10 @@ module PageProcessor
     def initialize
       @image_queue = Facades::Queue.new(queue_name: "image_queue")
       @storage = Facades::Storage.new
+      @frontier = Crawler::UrlFrontier.new
     end
     
-    def process(html:, base_url:)
+    def process(html:, base_url:, url:)
       @page = PageProcessor::WebPage.new(html: html, base_url: base_url)
       images_url = @page.valid_images
       images_url.each do |url|
@@ -19,6 +20,8 @@ module PageProcessor
       end
       #set images url as already seen
       @page.already_seen!
+
+      @frontier.done(url: url)
     end
     
     def upload(image:, base_url:)

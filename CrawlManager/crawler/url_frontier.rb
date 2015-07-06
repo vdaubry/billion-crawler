@@ -11,5 +11,10 @@ module Crawler
       
       BloomFilterFacade.new.insert(key: url.to_s)
     end
+
+    def done(url:)
+      url = Crawler::Url.find(url: url)
+      url.delete if url
+    end
   end
 end

@@ -8,7 +8,12 @@ module Downloader
     def extract
       #TODO : add a uniq (to avoid duplicate links on the same page, text and image for example)
       @html.xpath("//a").map do |l| 
-        URI.join(@base_url, URI.encode(l['href'])).to_s if l['href']
+        begin
+          URI.join(@base_url, URI.encode(l['href'])).to_s if l['href']
+        rescue URI::InvalidURIError => e
+          puts e
+          nil
+        end
       end.compact
     end
   end

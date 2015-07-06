@@ -11,9 +11,11 @@ namespace :debug do
     $redis.flushall
 
     urls = ["http://www.google.com", "http://www.wikipedia.org/"]
+    frontier = Crawler::UrlFrontier.new
     urls.each do |url|
       puts "Add #{url} to queue"
       Crawler::ScrapperDomain.new(host: URI.parse(url).host).add_url(url: url)
+      frontier.add(url: url, parent_url: nil, current_depth: 0)
     end
   end
 end

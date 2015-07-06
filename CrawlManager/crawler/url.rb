@@ -38,7 +38,7 @@ module Crawler
 
     private
       def self.url_key(url:)
-        "bc:urls:#{url.hash}"
+        "bc:urls:#{url}"
       end
   end
 end
