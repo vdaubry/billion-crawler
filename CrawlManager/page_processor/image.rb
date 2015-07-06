@@ -54,7 +54,7 @@ module PageProcessor
     end
 
     def known!
-      @bloom_filter.insert(key: hash)
+      @bloom_filter.insert(key: hash) if data
     end
 
     def size_too_small?
