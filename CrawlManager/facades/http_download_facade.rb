@@ -10,6 +10,9 @@ module Facades
       rescue Mechanize::ResponseCodeError => e
         $LOG.error e
         nil
+        rescue Net::HTTP::Persistent::Error => e
+        $LOG.error e
+        nil
       end
     end
   end
