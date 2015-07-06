@@ -1,12 +1,14 @@
-class InvalidKeyError < StandardError; end
-
 class BloomFilterFacade
   def initialize
   end
   
   def insert(key:)
-    raise Crawler::InvalidKeyError, "tried to insert nil or empty value in bloom filter" if key.to_s.empty?
-    $bloom_filter.insert(key)
+    unless key.to_s.empty?
+      $bloom_filter.insert(key)
+    else
+      $LOG.error "tried to insert nil or empty value in bloom filter"
+    end
+    
     true
   end
   
