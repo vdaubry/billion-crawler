@@ -13,7 +13,7 @@ module Crawler
     end
 
     def compute_current_depth(parent_depth:)
-      if current_url && parent_url && !parent_url.empty? 
+      if parent_url && !parent_url.empty? 
         parent_host = URI.parse(parent_url).host_with_sublevel_domain
         current_host = URI.parse(current_url).host_with_sublevel_domain
         @current_depth = (parent_host != current_host) ? parent_depth + 1 : parent_depth  
