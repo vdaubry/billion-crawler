@@ -744,4 +744,102 @@ http_interactions:
         W6pLSUl5Ztaky6kLgLNY+8GqF6dz0AAAAABJRU5ErkJggg==
     http_version: 
   recorded_at: Tue, 07 Jul 2015 10:09:59 GMT
+- request:
+    method: get
+    uri: http://www.google.fr/images/icons/product/chrome-48.png
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.3 Ruby/2.2.2p95 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.google.fr
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - image/png
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - sffe
+      Content-Length:
+      - '1834'
+      X-Xss-Protection:
+      - 1; mode=block
+      Alternate-Protocol:
+      - 80:quic,p=0
+      Age:
+      - '52128'
+      Date:
+      - Mon, 06 Jul 2015 19:56:24 GMT
+      Expires:
+      - Tue, 14 Jul 2015 19:56:24 GMT
+      Last-Modified:
+      - Mon, 02 Apr 2012 02:13:37 GMT
+      Cache-Control:
+      - public, max-age=691200
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAC+lBMVEX////4
+        zQzruR0zhUDmQTrkODTVnCjkryLeIifRICPsWUvRlipLtUlCoUXuY1I9kkPc
+        pCc9kkM5jELkOzfjMzHgJyreIiczhUDoSkHmQTrkODTjMzHfLjPgJyreIif4
+        zQzVnCjcpCdLtUlEm0E/lUM9kkPsWUs5jELpUETntCD4zQzvvRrRlipLtUlC
+        oUXuY1LtXk8zhUD4zQzxwhfRlipLtUlIp0fwa1ntXk8zhUDkryLcpCdpjDg/
+        lUM5jELoSkHkOzfeIif80gnxwhfruR3VnChLtUlCoUXsWUvqVEgzhUD4zQzn
+        tCDVnCjRlipLtUlIp0fwa1lEm0HuY1I5jELpUEQzhUDkTyHoSkHkryLcpCc/
+        lUM5jELmQTrkODTgJyreIifu7u/vvRpLtUlJrUjgJypalc74zQz4zA/0xRXx
+        whf5+fnruR3ntCDcpCdso9f///9nn9VjnNNim9Li5+z80glIp0dCoUVQjstM
+        jMpGh8c9kkNBhMU7gsTsWUs2f8HrVEgxe7zoSkHmQTrjMzHfLjPm5uY2f8Lu
+        Y1LVnCjkOzfeIic/lUNyqNrtXk/tvxNxp9mhwd/Q4tFEm0E5jELhV1fqVEjp
+        UETip6krd7jkryIodLQjcK9Up0ThrxzkODQhZp2Bs99Fp0ZVks3VHyPOHCDF
+        GRyLzolZjLTluLriSSKMtd2NrSkTXZjL2+t5rd27zt/x57VLq0R7qtfhd3Zo
+        fTczhUBXkL+f1Z3gSSnzxRCzEhXPgoN2q9vc8NzwwxEfaqdSh7TFMTX42EKR
+        u+BGg7Th0rC4HRzNwRnJ3OxepFVYvFS3oSzo38AfZqKbvN2qwdSBu4V8cjXc
+        4szf5OhvojKNYDHl39753FJlWijhVVbT7dJknj324X3I2Ojwa1nfwBqkryzx
+        zQ3t4KXFSk3ft1Agbav17cjE2sVXbi59wnyuuiDhNziTeWN0o8xuos5asFt+
+        SSWUQiWpx+KrOCZXijnmtRna4ej82CjCvifjyBC9FhmQHxb61Sa+l08nAAAA
+        YXRSTlMAIiIiIiIiIiIiIiIiIiIiVVVVVVVVVWZmZmZmZmZmZmZmZmZmZmZm
+        ZmZ3d3d3d3d3d6qqqqqqqqqqu7u7u7u7u7vMzMzMzMzMzMzd3d3d3d3d3d3d
+        3d3d3e7u7u7u7u7u4eez4gAAA35JREFUeF7VkFO43lgYRlONrVNbU3Ns23b0
+        27ZxbNusbdv20LbxPP2y/91kH/a66yoXa31vEupC4Kqptz7/IeLF26Zddl59
+        7GOZyckJPzk50xd4fHyPev+XAz4fFIhM8AuLQq8N6Fbve2+oqKjQBwnCh/xQ
+        OHxfv679698Oh0JCEghAFAgUgi74qanv3NCVP7AqNRxGCQbpgl8ViQzu7A+K
+        RKpSUQIRAh6QDj7PD+no38hHoBASiDBgo/NRHripvX/puzwfRQk0qEIy2Ak9
+        Le29SyiSu+p5ABIUIUDGOvjA/aQ/kj1Wn8ajho9gotgGPcFQIniWrdjUAFd4
+        zHcFS5YUrBRoXdl6jlfJAZY91FAPBWpOFceOA7Ftn1dWVv4BZGVlrV+/SjFM
+        DB5hgd9wES2OzcvZUlOz5dc/Y9s0GizLrVbrAxTmClZgaQMqoi2WHH3G2vnz
+        12boc2J7GaUgY3rhYDKL+KVRKIoti01GfXZ2RrbeaFxs+dRKMAEHsxPB79uh
+        KKBrZGaz0agH3WSW7ac3E8EM8R8l+PnfxsaWDxx1MpnJbDKZzGaZzDFvIRE8
+        iQMOB7bV2zfRbU4oEtTVOZxt9F+iL5eLAebk6s/UMpfT6XDUAaA7XTI18U6K
+        jsGi/9YYvB6PCxqEy+XxGt6XFogA8/Uagz8uJAiPx+uNq6VAIQZS8b3B64cE
+        E4/7XerN0oASBzYp2GX4MRgM+iGK+4Fg8Af1/52D56SAXbezrKSkJIiAh7IF
+        X4q+XPkgDm4hJpoMy8vLyzDl5cvpE8TATBxMIQL2NL11wxeYDVstC4kB1UQc
+        XGkjit3rjmys3pdgo+WwghhgelOYR20cUeTSB5qr586tbl5Af/W39EuVqoeo
+        c4yyw4REUy6NyD149BPpvoq5mRJ5ARfiStOKFd/8ZM/bId5fpWSeoiRG5+HP
+        IOBq7XPwebivZLQwIHG3HW+QQcU/oq9itHdQJFe/KWxw7YNvsY781y+m2nFt
+        eh5sEAnHwRfLrQpBV2m0pddQHRjjhoJIuEU75Og6nAd/BNWJce50nHBoYA7I
+        YCNdJ/ok172VLiTQQFVb8RGyGa22tPQN4n1I+tyTLyR2m91Wa/+YYRiNBmyd
+        7s6LqO5Ieinf7Rai9DNaOC3YuqeHUz2R9MSyfIjce3SCrEt5GPTz0Gf67a8s
+        W6pLSUl5Ztaky6kLgLNY+8GqF6dz0AAAAABJRU5ErkJggg==
+    http_version: 
+  recorded_at: Tue, 07 Jul 2015 10:25:12 GMT
 recorded_with: VCR 2.9.3

@@ -39,7 +39,7 @@ module PageProcessor
     end
 
     def dimension
-      sizes = FastImage.size(@url)
+      sizes = FastImage.size(@url) 
       sizes && sizes.max
     end
 
@@ -57,7 +57,7 @@ module PageProcessor
     end
 
     def size_too_small?
-      dimension < MINIMUM_DIMENSION
+      dimension.nil? || dimension < MINIMUM_DIMENSION
     end
 
     def valid?
