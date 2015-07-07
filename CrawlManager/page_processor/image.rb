@@ -1,6 +1,6 @@
 module PageProcessor
   class Image
-    MINIMUM_DIMENSION = 300
+    MINIMUM_DIMENSION = 350
 
     def initialize(url:, thumb_size: 300)
       @url = url
@@ -39,8 +39,11 @@ module PageProcessor
     end
 
     def dimension
+      return @dimension if @dimension 
+
       sizes = FastImage.size(@url) 
-      sizes && sizes.max
+      @dimension = sizes && sizes.max
+      @dimension
 
       # TODO : Test if overall perfs degrade when downloading full image to get dimension 
       # return if vips.nil?
@@ -48,24 +51,35 @@ module PageProcessor
     end
 
     def hash
-      Digest::MD5.hexdigest(data)
+      @hash ||= Digest::MD5.hexdigest(data) if data
     end
 
-    #exclude 2 similar images with different urls
-    def known?
+    def url_known?
+      @bloom_filter.include?(key: @url)
+    end
+
+    def content_known?
       @bloom_filter.include?(key: hash)
     end
 
     def known!
-      @bloom_filter.insert(key: hash) if data
+      return if url_known?
+      @bloom_filter.insert(key: @url)
+
+      return if size_too_small?
+      @bloom_filter.insert(key: hash)
     end
 
     def size_too_small?
-      dimension.nil? || MINIMUM_DIMENSION.nil? || dimension < MINIMUM_DIMENSION
+      dimension.nil? ||  dimension < MINIMUM_DIMENSION
     end
 
     def valid?
-      #Check remote image size before downloading
+      if url_known?
+        $LOG.debug "image url already seen : #{@url}"
+        return false
+      end
+
       if size_too_small?
         $LOG.debug "image too small : #{@url}, dimension : #{dimension}"
         return false
@@ -74,12 +88,10 @@ module PageProcessor
       if data.nil? || vips.nil? || !vips.valid?
         $LOG.debug "image doesn't exist : #{@url}"
         return false
-      end      
+      end
 
-      
-
-      if known?
-        $LOG.debug "image already seen : #{@url}"
+      if content_known?
+        $LOG.debug "image content already seen : #{@url}"
         return false
       end
       

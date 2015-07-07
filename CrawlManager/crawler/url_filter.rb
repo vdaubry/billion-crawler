@@ -22,7 +22,7 @@ module Crawler
       end
 
       if too_deep?
-        $LOG.debug "Cannot add url to the frontier : #{@url} was too deep (max depth = @max_depth)"
+        $LOG.debug "Cannot add url to the frontier : #{@url} was too deep (max depth = #{@max_depth})"
         return false
       end
       

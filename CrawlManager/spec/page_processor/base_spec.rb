@@ -13,7 +13,7 @@ describe PageProcessor::Base, vcr: true do
         processor.process(html: html, base_url: "http://techslides.com", url: "http://techslides.com/page")
       end
 
-      it "sets all images hash as already seen" do
+      it "sets only valid images hash as already seen" do
         PageProcessor::Image.any_instance.expects(:known!).times(10)
         processor.process(html: html, base_url: "http://techslides.com", url: "http://techslides.com/page")
       end

@@ -14,7 +14,7 @@ module Rules
       url.match(blacklist_regex) != nil
     end
 
-    def url_allowed?(url:)      
+    def url_allowed?(url:)
       unless whitelist.nil?
         return in_whitelist?(url: url)
       end

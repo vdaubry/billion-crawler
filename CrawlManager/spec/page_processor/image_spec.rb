@@ -32,15 +32,32 @@ describe PageProcessor::Image, vcr: true do
     end
   end
 
-  describe "known?" do
+  describe "url_known?" do
     it "returns false for first time seen image" do
-      image.known?.should == false
+      image.url_known?.should == false
     end
 
     it "returns true for already seen image" do
       image.known!
-      image.known?.should == true
+      image.url_known?.should == true
     end    
+  end
+
+  describe "content_known?" do
+    it "returns false for first time seen image" do
+      image.content_known?.should == false
+    end
+
+    it "returns false for already seen small image" do
+      image.known!
+      image.content_known?.should == false
+    end
+
+    it "returns true for already seen large image" do      
+      image = PageProcessor::Image.new(url: "https://www.google.fr/logos/2015/tsuburaya/cta-jpg-sprite.jpg", thumb_size: 300)
+      image.known!
+      image.content_known?.should == true
+    end
   end
 
   describe "dimension" do

@@ -18,7 +18,6 @@ module PageProcessor
           $LOG.info "Process valid image : #{url}"
           upload(image: image, base_url: base_url)
         end
-        #set images Hash as already seen (avoid duplicates with different urls)
         image.known!
       end
       #set images url as already seen

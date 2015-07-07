@@ -21,7 +21,7 @@ module Downloader
       links = Downloader::LinkExtractor.new(html: page.data, base_url: page.base_url).extract
       $LOG.info "Found #{links.count} urls on #{url}"
       links.each do |link|
-        $LOG.debug "will crawl #{link}"
+        $LOG.debug "Send #{link} to frontier"
         @url_frontier.add(url: link, parent_url: url, current_depth: current_depth)
       end
     end
