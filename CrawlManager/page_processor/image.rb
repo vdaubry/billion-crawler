@@ -41,6 +41,10 @@ module PageProcessor
     def dimension
       sizes = FastImage.size(@url) 
       sizes && sizes.max
+
+      # TODO : Test if overall perfs degrade when downloading full image to get dimension 
+      # return if vips.nil?
+      # vips.dimension
     end
 
     def hash

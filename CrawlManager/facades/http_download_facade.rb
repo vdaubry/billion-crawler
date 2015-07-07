@@ -12,7 +12,7 @@ module Facades
         end
         $LOG.info "Downloaded #{@url} in #{time}"
         body
-      rescue Mechanize::ResponseCodeError, Net::HTTP::Persistent::Error => e
+      rescue StandardError => e
         $LOG.error e.message
         $LOG.debug e.backtrace.join("\n")
         nil

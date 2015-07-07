@@ -18,6 +18,17 @@ namespace :debug do
       frontier.add(url: url, parent_url: nil, current_depth: 0)
     end
   end
+
+  desc 'Add an URL from param to the frontier '
+  task :crawl_url, :url do |t, args|
+    puts "Empty Redis..."
+    $redis.flushall
+    
+    url = args[:url]
+    puts "Add #{url} to queue"
+    Crawler::ScrapperDomain.new(host: URI.parse(url).host).add_url(url: url)
+    frontier.add(url: url, parent_url: nil, current_depth: 0)
+  end
 end
 
 namespace :rules do
