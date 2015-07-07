@@ -58,4 +58,11 @@ describe PageProcessor::Image, vcr: true do
       end
     end
   end
+
+  describe "size_too_small?" do
+    it "returns true if dimension is nil" do
+      image.stubs(:dimension).returns(nil)
+      image.size_too_small?.should == true
+    end
+  end
 end

@@ -61,7 +61,7 @@ module PageProcessor
     end
 
     def size_too_small?
-      dimension.nil? || dimension < MINIMUM_DIMENSION
+      dimension.nil? || MINIMUM_DIMENSION.nil? || dimension < MINIMUM_DIMENSION
     end
 
     def valid?
