@@ -132,7 +132,7 @@ DEPENDENCIES
   sidekiq (~> 3.3.4)
   vcr (~> 2.9.3)
   webmock (~> 1.20.4)
-  yajl-ruby
+  yajl-ruby (~> 1.2.1)
 
 BUNDLED WITH
    1.10.5

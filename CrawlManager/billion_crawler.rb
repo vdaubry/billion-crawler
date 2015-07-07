@@ -14,6 +14,7 @@ require 'mechanize'
 require 'vips'
 require 'benchmark'
 require 'librato/metrics'
+require 'fastimage'
 
 require "initializers/logger"
 require "initializers/redis"

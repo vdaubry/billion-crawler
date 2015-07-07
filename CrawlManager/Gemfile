@@ -12,7 +12,7 @@ gem 'mechanize',                '~> 2.7.3'
 gem 'ruby-vips',                '~> 0.3.9'
 gem 'fastimage',                '~> 1.7.0'
 gem 'librato-metrics',          '~> 1.5.1'
-gem 'yajl-ruby'
+gem 'yajl-ruby',                '~> 1.2.1'
 
 group :test do
   gem 'rspec',                  '~> 3.2.0'

@@ -12,9 +12,7 @@ module Facades
 
     def self.count(key:)
       return if ENV["APP_ENV"]=="test"
-      puts Benchmark.measure {
-        Thread.new { Facades::Metrics.client.submit(key => 1) }
-      }
+      Thread.new { Facades::Metrics.client.submit(key => 1) }
     end
   end
 end

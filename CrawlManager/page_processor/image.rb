@@ -35,14 +35,12 @@ module PageProcessor
     end
     
     def data
-      
       @data ||= Facades::HTTPDownloadFacade.new(url: @url).download
     end
 
     def dimension
-      return if vips.nil?
-      
-      vips.dimension
+      sizes = FastImage.size(@url)
+      sizes && sizes.max
     end
 
     def hash
@@ -63,15 +61,18 @@ module PageProcessor
     end
 
     def valid?
+      #Check remote image size before downloading
+      if size_too_small?
+        $LOG.debug "image too small : #{@url}, dimension : #{dimension}"
+        return false
+      end
+
       if data.nil? || vips.nil? || !vips.valid?
         $LOG.debug "image doesn't exist : #{@url}"
         return false
       end      
 
-      if size_too_small?
-        $LOG.debug "image too small : #{@url}, dimension : #{dimension}"
-        return false
-      end
+      
 
       if known?
         $LOG.debug "image already seen : #{@url}"
