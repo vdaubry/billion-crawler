@@ -12,6 +12,7 @@ require 'aws-sdk'
 require 'json'
 require 'mechanize'
 require 'vips'
+require 'benchmark'
 
 require "initializers/logger"
 require "initializers/redis"

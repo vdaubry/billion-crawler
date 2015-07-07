@@ -5,7 +5,7 @@ module Crawler
     end
     
     def start
-      $LOG.debug "Waiting for url to crawl..."
+      $LOG.info "Waiting for url to crawl..."
       loop do
         crawl_next_domain
       end
@@ -18,7 +18,7 @@ module Crawler
       url = domain.next_url_to_process
       return if url.nil?
       
-      $LOG.debug "Allow crawling URL : #{url} from domain : #{domain.to_s}"
+      $LOG.info "Start crawling URL : #{url} from domain : #{domain.to_s}"
       domain.rate_limit!
 
       @downloader.download(url: url.to_s, current_depth: url.current_depth )

@@ -35,6 +35,7 @@ module PageProcessor
     end
     
     def data
+      
       @data ||= Facades::HTTPDownloadFacade.new(url: @url).download
     end
 

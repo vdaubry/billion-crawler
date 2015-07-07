@@ -2,5 +2,5 @@
 
 require_relative '../billion_crawler'
 
-$LOG.level = Logger::ERROR
+$LOG.level = Logger::INFO
 Crawler::Base.new.start

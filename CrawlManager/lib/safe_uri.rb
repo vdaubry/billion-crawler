@@ -3,7 +3,8 @@ class SafeUri
     begin
       URI.join(base_url, URI.encode(path)).to_s if path
     rescue StandardError => e
-      $LOG.error e
+      $LOG.error e.message
+      $LOG.debug e.backtrace.join("\n")
       nil
     end
   end

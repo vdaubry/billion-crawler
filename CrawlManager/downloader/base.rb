@@ -7,7 +7,6 @@ module Downloader
     end
     
     def download(url:, current_depth:)
-      $LOG.debug "Downloading #{url}"
       page = Downloader::WebPage.new(url: url)
       process(page: page, base_url: page.base_url, url: url)
       extract(page: page, url: url, current_depth: current_depth)
@@ -19,6 +18,7 @@ module Downloader
     
     def extract(page:, url:, current_depth:)
       links = Downloader::LinkExtractor.new(html: page.data, base_url: page.base_url).extract
+      $LOG.info "Found #{links.count} urls on #{url}"
       links.each do |link|
         $LOG.debug "will crawl #{link}"
         @url_frontier.add(url: link, parent_url: url, current_depth: current_depth)

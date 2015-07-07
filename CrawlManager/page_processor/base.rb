@@ -7,12 +7,14 @@ module PageProcessor
     end
     
     def process(html:, base_url:, url:)
+      $LOG.info "Process page : #{url}"
       @page = PageProcessor::WebPage.new(html: html, base_url: base_url)
       images_url = @page.valid_images
+      $LOG.info "Found #{images_url.count} images on #{url}"
       images_url.each do |url|
-        $LOG.debug "Process image : #{url}"
         image = PageProcessor::Image.new(url: url)
         if image.valid?
+          $LOG.info "Process valid image : #{url}"
           upload(image: image, base_url: base_url)
         end
         #set images Hash as already seen (avoid duplicates with different urls)
@@ -25,9 +27,8 @@ module PageProcessor
     end
     
     def upload(image:, base_url:)
-      $LOG.debug "upload image : #{image.key} , size : #{image.data.size}, dimension : #{image.dimension}"
+      $LOG.info "upload image : #{image.key} , size : #{image.data.size}, dimension : #{image.dimension}"
       @storage.store(key: image.key, data: image.data)
-      $LOG.debug "upload image : #{image.thumbnail_key} , size : #{image.thumbnail_data.size}"
       @storage.store(key: image.thumbnail_key, data: image.thumbnail_data)      
 
       msg = {key: image.key, host: base_url, title: @page.title}.to_json
