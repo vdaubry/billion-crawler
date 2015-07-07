@@ -7,6 +7,7 @@ module Downloader
     end
     
     def download(url:, current_depth:)
+      Facades::Metrics.count(key: "website.download")
       page = Downloader::WebPage.new(url: url)
       process(page: page, base_url: page.base_url, url: url)
       extract(page: page, url: url, current_depth: current_depth)

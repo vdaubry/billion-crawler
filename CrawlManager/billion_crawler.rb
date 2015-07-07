@@ -13,6 +13,7 @@ require 'json'
 require 'mechanize'
 require 'vips'
 require 'benchmark'
+require 'librato/metrics'
 
 require "initializers/logger"
 require "initializers/redis"
@@ -24,6 +25,7 @@ require "facades/s3/client"
 require "facades/queue"
 require "facades/sqs/client"
 require "facades/http_download_facade"
+require "facades/metrics"
 
 require 'crawler/crawler'
 require 'downloader/downloader'

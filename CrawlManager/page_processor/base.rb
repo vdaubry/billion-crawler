@@ -12,6 +12,7 @@ module PageProcessor
       images_url = @page.valid_images
       $LOG.info "Found #{images_url.count} images on #{url}"
       images_url.each do |url|
+        Facades::Metrics.count(key: "image.process")
         image = PageProcessor::Image.new(url: url)
         if image.valid?
           $LOG.info "Process valid image : #{url}"
@@ -24,6 +25,7 @@ module PageProcessor
       @page.already_seen!
 
       @frontier.done(url: url)
+      Facades::Metrics.count(key: "website.process")
     end
     
     def upload(image:, base_url:)
