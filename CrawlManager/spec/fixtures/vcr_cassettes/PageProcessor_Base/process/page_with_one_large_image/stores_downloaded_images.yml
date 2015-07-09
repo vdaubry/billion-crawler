@@ -4242,4 +4242,63 @@ http_interactions:
         AAAAAElFTkSuQmCC
     http_version: 
   recorded_at: Tue, 07 Jul 2015 10:25:08 GMT
+- request:
+    method: head
+    uri: http://91.68.209.9/bmi/cache.addthiscdn.com/icons/v1/thumbs/32x32/facebook.png
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.3 Ruby/2.2.2p95 (http://github.com/sparklemotion/mechanize/)
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - 91.68.209.9
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Jul 2015 19:44:42 GMT
+      Content-Type:
+      - image/png
+      Content-Length:
+      - '991'
+      Last-Modified:
+      - Wed, 13 Jun 2012 22:53:38 GMT
+      Etag:
+      - '"6020626-3df-4c2627424e080"'
+      Cf-Cache-Status:
+      - HIT
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Thu, 09 Jul 2015 23:44:42 GMT
+      Cache-Control:
+      - public, max-age=14400
+      Accept-Ranges:
+      - bytes
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2036866ca5070908-CDG
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Thu, 09 Jul 2015 19:44:43 GMT
 recorded_with: VCR 2.9.3

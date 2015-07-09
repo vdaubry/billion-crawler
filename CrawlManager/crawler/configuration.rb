@@ -1,7 +1,7 @@
 module Crawler
   class Configuration
     #Deafult conf
-    @@configuration = {"max_depth" => 1}
+    @@configuration = {"max_depth" => 0}
 
     def self.set(property_name:, value:)
       @@configuration[property_name] = value

@@ -32,32 +32,15 @@ describe PageProcessor::Image, vcr: true do
     end
   end
 
-  describe "url_known?" do
+  describe "known?" do
     it "returns false for first time seen image" do
-      image.url_known?.should == false
+      image.known?.should == false
     end
 
     it "returns true for already seen image" do
       image.known!
-      image.url_known?.should == true
+      image.known?.should == true
     end    
-  end
-
-  describe "content_known?" do
-    it "returns false for first time seen image" do
-      image.content_known?.should == false
-    end
-
-    it "returns false for already seen small image" do
-      image.known!
-      image.content_known?.should == false
-    end
-
-    it "returns true for already seen large image" do      
-      image = PageProcessor::Image.new(url: "https://www.google.fr/logos/2015/tsuburaya/cta-jpg-sprite.jpg", thumb_size: 300)
-      image.known!
-      image.content_known?.should == true
-    end
   end
 
   describe "dimension" do
@@ -73,13 +56,6 @@ describe PageProcessor::Image, vcr: true do
         image = PageProcessor::Image.new(url: "http://freedomdefined.org/Resources/assets/poweredby_mediawiki_88x31.png", thumb_size: 300)
         image.dimension.should == nil
       end
-    end
-  end
-
-  describe "size_too_small?" do
-    it "returns true if dimension is nil" do
-      image.stubs(:dimension).returns(nil)
-      image.size_too_small?.should == true
     end
   end
 end

@@ -8,23 +8,18 @@ describe PageProcessor::Base, vcr: true do
     context "page with one large image" do
       let(:html) { File.read("spec/fixtures/html_sample/techslides.com.html") }
 
-      it "stores downloaded images" do
-        Facades::Storage.any_instance.expects(:store).times(2)
+      it "sets images links as already seen" do
+        PageProcessor::ImageLink.any_instance.expects(:known!).times(9)
         processor.process(html: html, base_url: "http://techslides.com", url: "http://techslides.com/page")
       end
 
-      it "sets only valid images hash as already seen" do
-        PageProcessor::Image.any_instance.expects(:known!).times(10)
+      it "sends only valid images to the queue" do
+        Facades::Queue.any_instance.expects(:send).times(0)
         processor.process(html: html, base_url: "http://techslides.com", url: "http://techslides.com/page")
       end
 
-      it "sends a message to the queue" do
-        Facades::Queue.any_instance.expects(:send).times(1)
-        processor.process(html: html, base_url: "http://techslides.com", url: "http://techslides.com/page")
-      end
-
-      it "sets all images urls as already seen" do
-        PageProcessor::WebPage.any_instance.expects(:already_seen!).times(1)
+      it "sets only valid images urls as already seen" do
+        PageProcessor::Image.any_instance.expects(:already_seen!).times(0)
         processor.process(html: html, base_url: "http://techslides.com", url: "http://techslides.com/page")
       end
 

@@ -4230,4 +4230,1776 @@ http_interactions:
         AAAAAElFTkSuQmCC
     http_version: 
   recorded_at: Tue, 07 Jul 2015 10:25:02 GMT
+- request:
+    method: head
+    uri: http://91.68.209.9/bmi/cache.addthiscdn.com/icons/v1/thumbs/32x32/facebook.png
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.3 Ruby/2.2.2p95 (http://github.com/sparklemotion/mechanize/)
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - 91.68.209.9
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Jul 2015 19:44:42 GMT
+      Content-Type:
+      - image/png
+      Content-Length:
+      - '991'
+      Last-Modified:
+      - Wed, 13 Jun 2012 22:53:38 GMT
+      Etag:
+      - '"6020626-3df-4c2627424e080"'
+      Cf-Cache-Status:
+      - HIT
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Thu, 09 Jul 2015 23:44:42 GMT
+      Cache-Control:
+      - public, max-age=14400
+      Accept-Ranges:
+      - bytes
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2036866989fd1049-CDG
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Thu, 09 Jul 2015 19:44:42 GMT
+- request:
+    method: head
+    uri: http://91.68.209.9/bmi/cache.addthiscdn.com/icons/v1/thumbs/32x32/twitter.png
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.3 Ruby/2.2.2p95 (http://github.com/sparklemotion/mechanize/)
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - 91.68.209.9
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Jul 2015 20:06:25 GMT
+      Content-Type:
+      - image/png
+      Content-Length:
+      - '1956'
+      Last-Modified:
+      - Wed, 13 Jun 2012 22:53:38 GMT
+      Etag:
+      - '"21a065b-7a4-4c2627424e080"'
+      Cf-Cache-Status:
+      - HIT
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Fri, 10 Jul 2015 00:06:25 GMT
+      Cache-Control:
+      - public, max-age=14400
+      Accept-Ranges:
+      - bytes
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2036a63898631061-CDG
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Thu, 09 Jul 2015 20:06:25 GMT
+- request:
+    method: head
+    uri: http://91.68.209.11/bmi/cache.addthiscdn.com/icons/v1/thumbs/32x32/more.png
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.3 Ruby/2.2.2p95 (http://github.com/sparklemotion/mechanize/)
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - 91.68.209.11
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Jul 2015 20:06:25 GMT
+      Content-Type:
+      - image/png
+      Content-Length:
+      - '957'
+      Last-Modified:
+      - Wed, 13 Jun 2012 22:53:38 GMT
+      Etag:
+      - '"602069d-3bd-4c2627424e080"'
+      Cf-Cache-Status:
+      - HIT
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Fri, 10 Jul 2015 00:06:25 GMT
+      Cache-Control:
+      - public, max-age=14400
+      Accept-Ranges:
+      - bytes
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2036a63aabb614c1-CDG
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Thu, 09 Jul 2015 20:06:25 GMT
+- request:
+    method: head
+    uri: http://91.68.209.10/bmi/api.flattr.com/button/flattr-badge-large.png
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.3 Ruby/2.2.2p95 (http://github.com/sparklemotion/mechanize/)
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - 91.68.209.10
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 09 Jul 2015 20:06:26 GMT
+      Content-Type:
+      - text/html
+      Content-Length:
+      - '178'
+      Location:
+      - http://button.flattr.com/flattr-badge-large.png
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Thu, 09 Jul 2015 20:06:26 GMT
+- request:
+    method: head
+    uri: http://button.flattr.com/flattr-badge-large.png
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.3 Ruby/2.2.2p95 (http://github.com/sparklemotion/mechanize/)
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - button.flattr.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 09 Jul 2015 20:06:26 GMT
+      Content-Type:
+      - image/png
+      Content-Length:
+      - '1639'
+      Last-Modified:
+      - Wed, 04 Feb 2015 13:38:08 GMT
+      Etag:
+      - '"54d220c0-667"'
+      Expires:
+      - Thu, 09 Jul 2015 22:06:26 GMT
+      Cache-Control:
+      - max-age=7200
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Thu, 09 Jul 2015 20:06:26 GMT
+- request:
+    method: head
+    uri: http://91.68.209.9/bmi/cache.addthiscdn.com/icons/v1/thumbs/32x32/facebook.png
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.3 Ruby/2.2.2p95 (http://github.com/sparklemotion/mechanize/)
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - 91.68.209.9
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Jul 2015 20:06:27 GMT
+      Content-Type:
+      - image/png
+      Content-Length:
+      - '991'
+      Last-Modified:
+      - Wed, 13 Jun 2012 22:53:38 GMT
+      Etag:
+      - '"6020626-3df-4c2627424e080"'
+      Cf-Cache-Status:
+      - HIT
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Fri, 10 Jul 2015 00:06:27 GMT
+      Cache-Control:
+      - public, max-age=14400
+      Accept-Ranges:
+      - bytes
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2036a644706f0920-CDG
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Thu, 09 Jul 2015 20:06:27 GMT
+- request:
+    method: head
+    uri: http://91.68.209.9/bmi/cache.addthiscdn.com/icons/v1/thumbs/32x32/twitter.png
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.3 Ruby/2.2.2p95 (http://github.com/sparklemotion/mechanize/)
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - 91.68.209.9
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Jul 2015 20:06:27 GMT
+      Content-Type:
+      - image/png
+      Content-Length:
+      - '1956'
+      Last-Modified:
+      - Wed, 13 Jun 2012 22:53:38 GMT
+      Etag:
+      - '"21a065b-7a4-4c2627424e080"'
+      Cf-Cache-Status:
+      - HIT
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Fri, 10 Jul 2015 00:06:27 GMT
+      Cache-Control:
+      - public, max-age=14400
+      Accept-Ranges:
+      - bytes
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2036a6462634024c-CDG
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Thu, 09 Jul 2015 20:06:27 GMT
+- request:
+    method: head
+    uri: http://91.68.209.8/bmi/cache.addthiscdn.com/icons/v1/thumbs/32x32/hackernews.png
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.3 Ruby/2.2.2p95 (http://github.com/sparklemotion/mechanize/)
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - 91.68.209.8
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Jul 2015 20:06:27 GMT
+      Content-Type:
+      - image/png
+      Content-Length:
+      - '868'
+      Last-Modified:
+      - Wed, 13 Jun 2012 22:53:38 GMT
+      Etag:
+      - '"21a059a-364-4c2627424e080"'
+      Cf-Cache-Status:
+      - HIT
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Fri, 10 Jul 2015 00:06:27 GMT
+      Cache-Control:
+      - public, max-age=14400
+      Accept-Ranges:
+      - bytes
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2036a6489ba508de-CDG
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Thu, 09 Jul 2015 20:06:27 GMT
+- request:
+    method: head
+    uri: http://91.68.209.9/bmi/cache.addthiscdn.com/icons/v1/thumbs/32x32/reddit.png
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.3 Ruby/2.2.2p95 (http://github.com/sparklemotion/mechanize/)
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - 91.68.209.9
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Jul 2015 20:06:28 GMT
+      Content-Type:
+      - image/png
+      Content-Length:
+      - '1751'
+      Last-Modified:
+      - Wed, 13 Jun 2012 22:53:38 GMT
+      Etag:
+      - '"21a061a-6d7-4c2627424e080"'
+      Cf-Cache-Status:
+      - HIT
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Fri, 10 Jul 2015 00:06:28 GMT
+      Cache-Control:
+      - public, max-age=14400
+      Accept-Ranges:
+      - bytes
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2036a64a2c7e0908-CDG
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Thu, 09 Jul 2015 20:06:28 GMT
+- request:
+    method: head
+    uri: http://91.68.209.11/bmi/cache.addthiscdn.com/icons/v1/thumbs/32x32/more.png
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.3 Ruby/2.2.2p95 (http://github.com/sparklemotion/mechanize/)
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - 91.68.209.11
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Jul 2015 20:06:28 GMT
+      Content-Type:
+      - image/png
+      Content-Length:
+      - '957'
+      Last-Modified:
+      - Wed, 13 Jun 2012 22:53:38 GMT
+      Etag:
+      - '"602069d-3bd-4c2627424e080"'
+      Cf-Cache-Status:
+      - HIT
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Fri, 10 Jul 2015 00:06:28 GMT
+      Cache-Control:
+      - public, max-age=14400
+      Accept-Ranges:
+      - bytes
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2036a64ba1801503-CDG
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Thu, 09 Jul 2015 20:06:28 GMT
+- request:
+    method: get
+    uri: http://addthis.com/bookmark.php?pubid=ra-4eea158d06720720&s=facebook&source=tbx32nj-1.0&title=Sample%20Files%20for%20Development%20%7C%20TechSlides
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.3 Ruby/2.2.2p95 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - addthis.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Date:
+      - Thu, 09 Jul 2015 20:06:29 GMT
+      Server:
+      - Apache
+      Location:
+      - http://www.addthis.com/bookmark.php?s=facebook&source=tbx32nj-1.0&pubid=ra-4eea158d06720720&title=Sample%2520Files%2520for%2520Development%2520%257C%2520TechSlides
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '295'
+      Content-Type:
+      - text/html; charset=iso-8859-1
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA21QQW7CMBC85xVupPZGnIRSqtZxpRJQkaBFIj306MQbOcWO
+        LcdA+T2OuVZaeWdnZqX1kLvya1H97Jboo9pu0O77fbNeoHiC8XpZrTAuq/Km
+        5EmK8fIzphERTklKBDDuB9c5CXSaZmirT8DRDqxiPfROXgi+iRHBwUxqzS/j
+        fkb/8Xo2IoZWAhDXzVF5Ggk2IBWshCFhoS1i4Zx5wfh8PieMcye6IWm0wrXW
+        B8XsITHCvA1FyxoYqQemzOugj7aBwtV/07z/nWRJGmhzrDteWDZ5BGDZ7Jmn
+        T/M89RXUcHqx91DCfT7L01UnYQio1Tb0Ek4gtRkvDbN/5ouAKmjEXnYchpgK
+        sEAwownBZowihOC/O4YYXQG5CgByfwEAAA==
+    http_version: 
+  recorded_at: Thu, 09 Jul 2015 20:06:29 GMT
+- request:
+    method: get
+    uri: http://www.addthis.com/bookmark.php?pubid=ra-4eea158d06720720&s=facebook&source=tbx32nj-1.0&title=Sample%2520Files%2520for%2520Development%2520%257C%2520TechSlides
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.3 Ruby/2.2.2p95 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.addthis.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Jul 2015 20:06:30 GMT
+      Server:
+      - Apache
+      X-Powered-By:
+      - PHP/5.3.3
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '339'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA21Ry27CMBA8t1L/YesLB0S2iBNVkkMBqZWgRShVywkFvCVW
+        nQf2pgl/3zwIohU+2KPRzM6s7N5P3ybBejmDiGMNy/en+csExADxYzRBnAZT
+        +HwOFnMYOg8QmDCxilWahBpx9ipARMzZI2JRFE4xclKzx2CFZT1rWJtPcMAX
+        TkeyFP7drdsklrFOrHdlznA8Hrf2VkyhrF9WrMlfKGtVsocVHXJlSMIyNGFM
+        TMbFVlFJtUq+wZD2hOWjJhsRsQA+ZuQJppJxZ62AyNDXn/xQSo6UdXZpjI0R
+        q+YU273T6LEejac6Fdym8lhTUv2Akp4oTJhlZOrSN2eycm/TsuH+kwOVJK0c
+        Ls46zU3V/ZCTZVAW4tPCHFFDN0tn3dLQy43uOe7WoN9c/c2mXyVhFXU1MzQm
+        LYR/FnSge2vULYb1H1TgF9yDjJ0rAgAA
+    http_version: 
+  recorded_at: Thu, 09 Jul 2015 20:06:30 GMT
+- request:
+    method: get
+    uri: http://addthis.com/bookmark.php?pubid=ra-4eea158d06720720&s=twitter&source=tbx32nj-1.0&title=Sample%20Files%20for%20Development%20%7C%20TechSlides
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.3 Ruby/2.2.2p95 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - addthis.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Date:
+      - Thu, 09 Jul 2015 20:06:48 GMT
+      Server:
+      - Apache
+      Location:
+      - http://www.addthis.com/bookmark.php?s=twitter&source=tbx32nj-1.0&pubid=ra-4eea158d06720720&title=Sample%2520Files%2520for%2520Development%2520%257C%2520TechSlides
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '295'
+      Content-Type:
+      - text/html; charset=iso-8859-1
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA21QQW7CMBC85xVupPZGnIRSqtZxpRJQkaCNRHro0YkXOcXG
+        lmNI+T2OuVZaeWdnZqX1kLvya1H/VEv0UW83qPp+36wXKJ5gvF7WK4zLurwp
+        eZJivPyMaUSEU5ISAYz7wXVOAp2mGdrqM3BUgVXsCEcnLwTfxIjgYCaN5pdx
+        P6P/eD0bEUNrAYjr9qQ8jQTrkQpWwpCwsC9i4Zx5wXgYhoRx7kTXJ61WuNH6
+        oJg9JEaYt75wQ+cc2AemzGuvT7aFwjV/0/z4O8mSNNDm1HS8sGzyCMCy2TNP
+        n+Z56iuo4fJi56GE+3yWp6tOQh/QXtvQSziD1GY8NMz+mS8CqqEVO9lx6GMq
+        wALBjCYEmzGJkIH/7ZhhdAVJVhlcfgEAAA==
+    http_version: 
+  recorded_at: Thu, 09 Jul 2015 20:06:48 GMT
+- request:
+    method: get
+    uri: http://www.addthis.com/bookmark.php?pubid=ra-4eea158d06720720&s=twitter&source=tbx32nj-1.0&title=Sample%2520Files%2520for%2520Development%2520%257C%2520TechSlides
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.3 Ruby/2.2.2p95 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.addthis.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Jul 2015 20:06:49 GMT
+      Server:
+      - Apache
+      X-Powered-By:
+      - PHP/5.3.3
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '339'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA21Ry27CMBA8t1L/YesLB0S2iBNVkkMBqZWgRShVywkFvCVW
+        nQf2pgl/3zwIohU+2KPRzM6s7N5P3ybBejmDiGMNy/en+csExADxYzRBnAZT
+        +HwOFnMYOg8QmDCxilWahBpx9ipARMzZI2JRFE4xclKzx2CFZT1rWJtPcMAX
+        TkeyFP7drdsklrFOrHdlznA8Hrf2VkyhrF9WrMlfKGtVsocVHXJlSMIyNGFM
+        TMbFVlFJtUq+wZD2hOWjJhsRsQA+ZuQJppJxZ62AyNDXn/xQSo6UdXZpjI0R
+        q+YU273T6LEejac6Fdym8lhTUv2Akp4oTJhlZOrSN2eycm/TsuH+kwOVJK0c
+        Ls46zU3V/ZCTZVAW4tPCHFFDN0tn3dLQy43uOe7WoN9c/c2mXyVhFXU1MzQm
+        LYR/FnSge2vULYb1H1TgF9yDjJ0rAgAA
+    http_version: 
+  recorded_at: Thu, 09 Jul 2015 20:06:49 GMT
+- request:
+    method: get
+    uri: http://www.addthis.com/bookmark.php?pubid=ra-4eea158d06720720&title=Sample%20Files%20for%20Development%20%7C%20TechSlides&v=300
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.3 Ruby/2.2.2p95 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.addthis.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Jul 2015 20:06:49 GMT
+      Server:
+      - Apache
+      X-Powered-By:
+      - PHP/5.3.3
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '8530'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA6Vd63bbNrb+PXkKjn6M7TWxnEtnOo3jfVbSXJpJnKSx20w6
+        a1YWREISI4pgeJEsz/SBznOcFzv7AoCUG2hSKHUXN/a3iY8AQRCggL0f/vHJ
+        m+8vP7x9mszbZQG3HtIhuVoWZXM2mrdt9eDkZL1ej9f3x6aendz97rvvTq7I
+        ZkS2WmV4aPO20PAoyy7neZNcmDRXRfLYmMVS1Yu8nCUXc1XT8XHXtqZM3ufZ
+        TLcPT+S8Ww+XulUJcR3rz12+Oht9b8pWl+3x5abSoySV1Nmo1VftCXGfJinm
+        2Oj2rGunx38bJScul1It9dko001a51Wbm3JweuKuEP9UMq21TtZqk7QmmRjT
+        tElbq+k0T5OJShek3ZiuTpq81clkkywVlyRvE62aXNfJ1NTJKkfY1A1ZN3hF
+        Ws6xjL+5rIXerE2dNYNr4rNu0wVwZd3GbIvCrG9zdkjYQ5xQ2UrXbd7ourmd
+        tDqdl6Yws83tJFPI0qS5LlPMrpFbUOvULJe6RBBrAs/gwhisl2V+zbrbyVoX
+        aIRFVPXtpCq6Wc6GkoFN/6Ygqak2dT6bt4OSfO90yWF6lNy7c/cvrr5/czrf
+        98Gpv7flSIZFXi6wiAVejipNmaeqGCXzWk+32q3KshbzHmMhT1xVjqt5NchD
+        zjk5SVU61+6ENCv5HMzj5O5f7nx752/p/b/eSb/79qRpN4X2ed0fpw2WkK+D
+        kWau6QpbbLq2xbLBCTyUNjlEPqmVEu0oaer0d1zEp6YvzadmBA9PJB8s004a
+        uKXaj6W5KrKzu6eW5WPVTc5GtTr+Rmt19y9/y+789dt7d/Bv5C1MWRiVJWfJ
+        P5NpV6bUdA6Pkn8nmUk7bGDtGO/K00KT+HjzIjscYQtd5ak+nuZFq+vR0XiK
+        ls3h0Wnya/Ivn21XY631LNwuzkYXalkVOnmWY2XyY/ZEr3RhKso9+U9yic3+
+        osjxGR+d3lopfESFq8HL+3eSHNy9c+daLQqVmcXBg9EgNbqdHNxr1Qy195JL
+        NeM0tYClJpVIpFTffasmOeoescCqbNpuSENHUeTTkm1YENXqc02aJz8nP77D
+        5p1Jbkt1bcp13syLvGkJZ4VAumTyRygk5/qPrMyXpDFF8iqf6qattVqy3hRL
+        lReEvXmVnKPI2qrRZcN5vL0giZV1a0iDB05eq0zP+GJFIuVEqZKq4jEdRZFn
+        HSvwKIqiaOt8ollZFJckM6BVi/VKapFYmc9muq5MutBtQxCn30paDNpiw0A7
+        LjaiuW66maI6Q/GCRFYXqszIkI5JqxbYE5QC4C2ylfjYyQIYImM1S165cbqN
+        Uy20Lq2SRKemJ6mxepYF6OpKFXmam07AQZoNzKTO8H/CrCjq8tpMzBWrUXxs
+        rkgtveqgQy81F6VXvNZSHqvZpNcDfDNOrz2q6wV27NrBnBRQWK/Gpc2rVnmZ
+        T7kirCjqTabrnLUssbLLso2vCUqc+6roplOpYRZEdX19zfmyQKpULTeGmt73
+        LIiq1vdYg0dSTI3JihVd+fdzXdcb7uO5XaXz/DOr88+czLHLojQdRdHqrsgX
+        fC7KP71CmYFCNQ29AKpCpYw6xVtSiIlWZYXvkpZhTLylhIcaJZdE8gXKDJRZ
+        To/I93RkhSnyVa5IJdJYHnF+E+s6Y2C57Ohl1EoWpllKod5cnOc/sqppJqrR
+        bHxxkTwmmfVdjSdxO/uexfFPXPOZ7hvgEz1ofHhRKu2KFo2lIT1BxfeisPhM
+        tDOXzFtlNShZpRGNkaRLOwWODYq5oRufmXMWRd0iZTM3XYt/dIJpse1eWIWY
+        dBNVMkQCq2qF4wlN3dsTK46LlSCm+oTDLkZEZHXHPdKTTjqkDLtNukl8JIWe
+        qrTli3v6jCVWLrrMUGXplySwqkDLslUV9Z4uMa64A9W2U326tD0qHbn7ZE3y
+        qKrEDEdICxxFMWBlBnBEVpqWruupFVl9hcNJbI70fHiZgetNUxmqs6fXmwuU
+        uGfAkQO+IOaG3wbP1ATfeU0+41qbqklX4C0vNt/cEdAnBU419QgMiUjqvMQ3
+        J75ocqmyZypPXgxU3GrnVBHphmE8Sm615FQvXDLH8aNVkSjqZp4b6n0F8SkB
+        V2pSMOmjn0mySt2w7cqlsaPl/ktEqzQ1PtfSrz1zKfuQWbRrekyeg2le4uVj
+        z/qpy/np31awSaEW3Hs9Y0FUeTUxih/aZ06W/qlYsJKOoqiXDXUdM9a6hEBd
+        3XzusP9iyCVc7eIUI8t5tKRqrmZUPPEKzqDWeEouGEmixHF8NtXcRzzjxDMt
+        nQSOvqhLxMNbTuKwgtN0JMUMhxSLPJXCPvcJhujynz9nMZ/iqIyu6LlIYxn4
+        zPIZdk0L7kye57PHLAuw0oreuAys9KNXKDNgn57n7umZmRU99M/NeFVK2mSl
+        MeuGlSZLXlPCIjNuJs9Z6FX4sJRNodoeSy6dqrf6iJOTBlvyR55CedM/96+T
+        GY6csHCZntCBLETxRBRkMldUO6Xmy/uBE8lrLdc3R6NSsZ4EzrHoVk2pqMZ/
+        wPrAQStOpJhrrnFiMjczzsfJ7hWMY1vsm2wX/oNPMGRM23Q5l/UHlC9IFqDF
+        4c0Vq1mySlvfP4hEyvX9Fd4anONxR/jD5fmr5Gen4J4gw3EzvpAQfGFFVs/x
+        UZxxR+RE6TcyfcU5vRBJlPhsV6rSoncJhkw94cvM35DAqlpX2lb5i3dWHvvb
+        ktMwSPNoOr8QkdXrfE2q9/l7Sn7Ctmv7yb9bUdRVtWEdHpNL37g/4bSZ9XRk
+        RbescKxPNf53K5J6oSY0/KDqfmlFUetVV7OSBFHlV3nJKhISLIhq5N7gQ4FN
+        mh7alyKxMqeH42W+kESJOecta0hMXvDlLwqd0WW+pCMreILeSt/y0icIwuau
+        sH/WtcLBBKKvVOIUDOeTGodt9KJ6ZUVRZzygfpU/efQueVPiQ6tFXy6wMyoZ
+        IvFF6dTNDCfXurZIkzznpEfpvjUW5JvYOKj7ZNXdJzs0xUGR/oTdYKkKhlb6
+        75JikOYCdT9Wf8XpwYhdpHvfMCYiTX/5pbyh5l7TaIBmPuO6k1d1PaPvA6hF
+        cYzyOC8tILO6cxZEhSXh0d+5SE45MfwOOLciq/W9jN/cIogqL1fXrMrLn38R
+        1aLjzzQ0oDn3CYGW9EWC9Sw5JY+4z1lwZaDXXaE3rBcxebGsTN1aFKd/WsD/
+        +1+11K6aWdXg5M9W3hL7FV2vDbekc04k7400pR77yK/WAZw8eSoWV3xleOCk
+        wbl8w6Ogcyu6yzX5ou6YQyRW1il2dWuDIwSq4OW79PXTdv3m3Uu5dU0lo/Jz
+        kUS5yrNGWt1y87PIBJTfUN6vv+H3VKkanrw31Hm9psQxpxjTLbYX0uv2lYwf
+        ULXCKWojShad2nTXVouSKNfNUk9kzEld/rl+bEedBLV1x9NMQi5JdsAq5/HU
+        ayuyuvuU05Pwmo6koDceXWdT5ov8IzfaN0MV2yxwpJhf55TZm5ev37DMQIVd
+        AL5ODHfCbzB1OddPjHTEZrMpqC7e0JEUWJ8LqoS3dBTFFMvLd1lEO3qqsqnh
+        zoCMnzwb9AyILDddXQiw3Pz07hWr5/hyxTEX1eZbknHMxdWJA9lyU/G77K0V
+        rfrKiO7KiKLjseRbOrKCvwWQhgVR4X3XPIl8a0VW09RMRkHcq/NU7ZlNswE9
+        awTQkRSf6yl3Az++e2a7gM91U6esuahT143g6KxsU8W39kcnM2CnFj+6qUWt
+        s4wb8zsWrCqfTkWFQnK+eatmznjRLQV52S1F1WhVp/OZjGPe2eRzO4Zp1FRT
+        Fyod/0WfYjA1puI+/4KksWq9Nu+1clGNxlcIz7MuRBJlodP23kxjQ6oZ4vRz
+        TrMBvfHnhLAgKt2aIuO+5mKuL1E+l0vF0fRa5xO6uRcoJ+8pwchiUxt+gC5E
+        Sh7bkTxOernZX5y/4KTJFP1WQBoUceyUiRp7Rs6WBVZVONaQEdYFihcoknqT
+        53xyhSO4zH49klF4xbl6mYFW1a2SE6zo1YVkbUVRm3ojX92lriidPLMKseiy
+        nPt+lqTzR3E6tbfDila9xClPV5lSEEr9VMnnPgIrbDvKQiwz0BWipKMo8PG8
+        5lshkiirSc3V9dPb5PG7N6Kjhj+b5PwOu+hTDNLLmNR0ZMUGZ64Ff6C5sCKp
+        W6Wuif6SjqKYWcXMKbB8HQ+zL60oaqp2sWSJP2BiI1vrCZabv+Jh74UtZoJN
+        A9MCY0vHy8x5CHjZpyzYlDhfFqR5jaKo6xxvSMlqErH/snqzrnIez106mQHD
+        HQe+tqSxtKaiHz8KGuxz5qa6kDSjNL2Y6pru/6WTGehoPEZaFkSFT+pnVpEg
+        KrzLfC4LrMKXA42KL+nIinVuB1mXInklFtNq+ccSUm8qLe36UiRSdpWdpvzE
+        gn38sd9W3aTBlrrgPv+nPk3wKleZptv9MwuiqiesqCeSpHq5xkFKI7OQn0WR
+        nJsyubCTkRU94z8vTNmqhdPgq7/L6u5aU/WsXlLyCScZNlemok8CdN6bf4jM
+        wGZS4+Sk4W7GJpKLcx6DrHFsW9DFvmeBVNjt8x2jrlPGPO/VZmLf0zwypRrF
+        5oVXqzfjpyu8S8yDDdBW13uRrNJNFlHrJyRr/nhatmv+MPweB0YvKYmtltvY
+        GieCDU43CCPRfhDKsLPFyzOmaNZzwyV9T8fklTGLjk3WOPSXme97kZLnin6/
+        kovBadKUO+73KD2Tjpt+JViiLZcK5XOSGcCRKXZ+DWeG8luSBVjjqJW/FLw3
+        68ck8utH5Y2mHyNXRr6JvKdPKclbvA84AcyVfLtabxaGy0VHUlwpeZz/QUdW
+        yAvqHy9e84Bso3DCOlnQq+7DH/0PdY2H7OwUMff7xEbhnIaK84EFUdUZfUCz
+        apeQfp6/Unywnyw3SMCf8j6wYFX2O8QHkURZd8u02/A7+INPCNQtzYTV3bnh
+        Jr/pugl1Dh/oSAr3A5F0Db/YlJu9X+fptaKRxC95+otKRVXOuAX/ggK+JZNf
+        5Zco90NWasppPuPfo7r8Y9fojw2O3D9Ke3iQ4OBS3yZEFB8rbO+NU1e1ybq0
+        fUCTk6vj+3fuHGDmW7nLL82ceV2g3cHthH85Q/Grfzo7uIW5+t//hPJsZBlH
+        SHjra39RdD9cNt9u/dbq8l7zL7Y3f6M8kZUDtx5OTLZJ+PP92UjRz5P/7efL
+        fJocEmamhx9xLHX0x7Ozgw6nTfgKwYeAfpN0zGpyNjoenSZ0BgoJWiYHx2hC
+        5427PBOYU41L/XrL/b6ZmGV62KzSo39TBnKnxmSc/OlPySA5xpdHurC5sjxO
+        9eqQxhUHt3WTqkpzNkentcb3Zsm3+XTAU89XyaGhKzdjronX2Fbw9g5S41rz
+        LxuHB6qdmxXe8IODo62LbXwmdLXDU/mDzpvp4YhPHR0lWA3Hd4+2yP6MNZNI
+        1qfUlvs7deshff1MqHpUS+IoUcx4Ntr+NX2JY0uDVjSip9uYl1Xn7uI8zzLs
+        S20u+LjIMgAWV6roUH50efyFH6BPjt1/8nN9KFOcYrpMG5/l7lMa7BtTfyku
+        ZU91z8HOHNrWnU2SPfO/nFN1E3cSi/asL/32vjOf1HOn7VcWGBu8O4fFrzup
+        LvxJJH7VSXZ5x9ZaD3vi1/+0v5OhwHmSzZ9FmzvBu07Dp5ZOcqf65FeVin8n
+        +thqLMCgDd/U/o6ssEtvtrMRzdc13/V0cG9c6qtOzac1njQ4e6D4qgyW+Lbo
+        b7BLfd1lp7XWZTM3vv0ONV+VBb5Q2nl/CznxVSfOtaxYkjNd6qtOrdXar+mS
+        04earSxwpmjZcMBdY0+Y4D+vladBlB6wrz/KD0eU/iRvM78LPFbFt+ZdZKjg
+        dzxGD08q7MSH2fXcJ0hur28guku1K3cG11qoiS6I7uzm8p6EVz5x55/Ty+GB
+        mjSm6Fp9mhR62j44/g7/6eXpCNx6rgvJgIqAGTw84bzh1h/+YO+BKRd6wwNe
+        rGt5b9p3rilf6g0Pfw81DfePTkdi3VX8SJMNXdYhD0X43tz2S4TwxZm2LnFA
+        p3KrvFGafuyBJcPJ99noPvbH+FLAKeysnZ+N/iLd86Dq3MHVnm8cgZvbG/rL
+        8bZNoIH4ZVI48J2YKz/QwcGP6or2I98Er71/7+r+PdGNnPLBb0Z68FDJ2rXS
+        yDcQLL2qccR2NvrY6GJqX9o2zwmvwvs4XFN18+K+YAKDxMMTFUVJ67ZCXIwB
+        L+mKzt4u/goxWBisEEsjC8tCLBYFWXUWzcEr1EIUDAKvYosn4AVvQQZGQZbF
+        xXOsPtdhCgJhsMwummZraV6Qb9sKZP1ePCet+QtzMQpuQWA0S74MUiAE28sL
+        o1lkSWKQycLgFixG88gixyCPhcEugYymofWSIQ7CgFZURudu116GCCwMdo1m
+        LA2v6wyRCAi85jOegNaHBgkIBF5DGk9g152GSZwB+HWp0WR2BWuIysJgV7pG
+        0wxXxwbJtoxgawVtPHFbBF8HAoKsyI1nkFW8YRKLg1vkG81EC4KDNAzC1qLh
+        eCK3uDhI5gzAL0SOJ5MFEEEqgcEulNiLJtwSBBWS+KbgFlXvYGEc3PLrfZjk
+        0/MOKjEAv6Q7nmy47DtIODSCraXi0cRuTXmI0+HgVp/HM8mK9TCTxcEtaI9l
+        +tIi+BDrF21he718fIn9GvtwoXsTGK7C34vTrtzfSepsoF/cH8+546by/eSt
+        AtHZuz0FIQ6Hg9t9EM8k+xSCRAKD3c8QTeP3QASZegvoN0nE8/F+iiAXoyC7
+        LuI5eINGkINRkG0csRyy9SPEYVGQfSHxHLSHJEhBIPA+k1gCuzclROFgGO5c
+        iS4MbXMJlYUwoI0w0bnzpplQ9gwCb6yJJ7CbccIkzgD8Zp1osq0NPkHGbSvY
+        3gUUz+12DoV5vQX0W4v24qPtSDvp2AD8dqVoMt7aFCJiEHj7UzSBbJQKUlgY
+        +g1VsUxuE1aIyuMw2KMVXyza1xUuFaMgm76iOexGsSCLw8HvI4umsnvPglQO
+        B781LZbKb2cLcfUG4Le7RZNtbZELMm5bwWAf3R7EwceKMSKJfqjsVr5dBASD
+        3ei3B03whc4YEUS/zHmvYTh7m/8+BHbvYpDD4eC2NsYzDbdDhvm2rGB7z2Q8
+        N2+vDHIyCrIJM5rD7tYMsjgcBvs648nsBtAgmcXBbRWNZurCHzIZA9p5Gp07
+        LyUPZc8g8CGWwO5+DVE4GOze2Gga3k8bZBEUZLNtNIffoBvk6S1gsIM3mnDX
+        7xYCAu//jSWQXcQhBouC32IcXw63FTlYFmcAfttyNJnb3xzicji4ndDRTH7H
+        dIjKG4AXo8lkR3aQysJg92tHf/jq93gHv3cNTKDfBR49mx1uFQ9NaYc2MNxc
+        Hs9qd6EHGS0Obr96LNNwj3uIbcsGbm6Dj55r2K3zwbmGw4F31sdXZb2jGmuu
+        wjq6+tzm/l0MjIPb+x/P1HsICJL1JjDwKBBPyV4IwnQCg/VRsAeNDva9AsKz
+        Pebnzk/CDgrBQaQ9eJzrhR1U3gSGzhn25AzPBHsD8A4fosm2fUKEGLetYDsd
+        zS1OJ0KcgoK4pojncC4sgjTOALy7i/jPpOQaI/iRlEBg9xnxBN7LRpDFW0Dv
+        kyOez7vuCPJ5C+gdfezz/thyDrLrRbJtCNtORKJLbN2NhIprYbBuSeJpnCuT
+        MJO3gN7XSTRfVwa/ejMG5DolOnd2sxLKnkHgQyxB774lxDKwgN6/SzRf8Pmi
+        T1TPn0fnK25lgplbGHr3M/FM1mVNmMsZgHdpE09m3eCEyZwBeDc50WS7pqgC
+        wvN9pqjkqieYP2HAXnzis7eef8IczgB6z0B7sM3Cwz2LgvgI2o/DuyfaTdab
+        wU0nRtH8Ww6NgvTbVrDt9SiWu/eUFOIdWMDAlVI8IXtdCpIxCuKbKbpCrT+n
+        YFU6HAbunqIL5NxCBcvkDWDLhVQ0Ye9pKsTYW8APXo7mc76sgnTeALyvq3gy
+        8YoVpBIYrPesPWh2dcMOBuuPK5Zm4MMrRDU0gW0vX9HfT5w7sNC3E4eDcxwW
+        zeQ8jIWYHA5Oiv8mJF7Lgp+DBAbr3SyexjtBCzJ5C+hdpkXzsZu1IJegID7Y
+        ojmc37YgjTeAG37doimtL7ggo8PBuYqLZlrn6yALYUCe52Jzd97qQgweB+fM
+        Lp6pqoLVJSAMneNF85givG5cQGBne9EEzitfiMPh4Pz3xTI5n38hJo+DcwkY
+        z8TeA4M8jIL4GIznIHeEYQ5GYdtpYTSXdW8YIrMwWDeI0TR5cEJFELzMoydR
+        zhFjOH+Lg/fTGE3FPh1DPAwC+32MJujdQ4ZYegvonUnG8m05oAxRbhvBq95J
+        ZTSt82YZYnQ4OL+X8UxZeNuKgDD0oxnPI743w1QWB+eacx8m685zF5kzgaHD
+        z704xS/oLkqxgN6L6D583addXIiCd0saT+NdmYa5ehMYODuNphw6SA2SbhnB
+        lhPVeGLxthrmtDgM/bJGL42wvlyDiyMcDtbVa/waDHEPG16FYXHovcfuwbVj
+        A7lFQdzRxnOI49ogicBgHdzuQ8OecHfwMA7OZ240k7jXDfEICnKM5yDHvWEO
+        RkG8+sZzeOe/QR5vAb2r4Hg+cSocJBMYrPPhfWjCG24sCt6bcTyNuD0OE1kc
+        bjhI3oNQqx0Pq4XBuVze5xWy691BDNaDc3RRvGfnYGl6Cxj4fY4nvAq3CMKA
+        fEhH526dTQcZHA4Dt9TxZOLAOsglMFhH19E0A+fYQa6hDfT+s+NfseJpO/iG
+        FRisR+54GuvFO0zkDMB7+Y4lK78J3iqC4PU30T9X9n7Ggwy9BQwckUcTsvPy
+        IJmgIJ7N9+AQF+hhFsHBOUvfh4ncqu8gIhis+/V4GueyPczkLaD36b4PH/uB
+        30UnBuD9xO9Dxg7ld3AxDs71fDQTu6kP0TAI7Mo+luCm+/sQ12/sYMtLfjS9
+        86wf5PUG4D3vR5P13vqDdAMTGPjzj6Zk3/8hMgaB4wPEEnBMgRCBgMDxBuIJ
+        JEZBmMPi4EMYRFO5sAdBLm8AfViEPdg4lMIOMsHBRVqIZnLRGYJU3gB89IZo
+        MhfmIcTlcHABIfZgugoO/gQEDjART9CFl1QLCBywIppAYluEGAQFceoTz2FD
+        ZQRZLA4uqEY00zAQR5Buywi2gnVEE3NgjxAhg8DBP2IJOGBIiEBAkGAi8QxN
+        HZyiCwg+OEk0iQ9iEiLyBuADnkST7drRJiD8uM+ONgm6EmKwKEhElj048ul0
+        BwehsBXiZQ+qRRf8JGRRkJgx8Rx9nJkw08AGhqFoovcyDQLWhPYyDUxgEOAm
+        mlKC4gTpLAwuZM5ePOFG6GBwQXiieWy4nhCPhcGG9YmnGYQCCpMNjZByEC4o
+        mlgiC4UYBQWJPxTPYWMWhWmcAfiYRtFkLg5SkMwbQB8nKZpNIioFuSwMw8hL
+        0VwUrSnIxCBcnL+Izt5GfwoyOBxccKh4Jo4jFeRhFCTaVDSHjVAVZHE4uABW
+        sUwU9CrEwhj4eFjxhXFxs4KlcQbgxWiy1gbjCnE5HFzYrr2Yih33yOHgIoHF
+        Mw2ih4XphkawHWEsnpmjkoU5BQYbs2wPGgluFuYRHFwYtD2YXOi0HWTeBAbB
+        1fahlCBsOwjFAHzAtmgyDu4WImIQOABcPIGEigtSCAw2pFw8DYWhC7MwCjZG
+        XTxJH8kuyNSbwCDyXTQlR8kLkTEIHEkvmsCF3AtxOBxccL5YJg7oF6IREDjY
+        XzzBbBfBTAhm+xDYKINBDouDi0cYz8SRC8NEAiOPRDiM5umjIga5BiawFTcx
+        nrSPrhgk7U2Q1Cf2oOQIjjv4BCcyDvAYzyRBIcNMFgcfM3IPKhtbMsxlDcDH
+        oYwmM+FvbYwBh7WMz34QCjPMMzSCPlxmNKsPqxli9AbgQ3BGk0m0zhCToCAx
+        PeM5OPxnkINRkCCh8RwcTzTIwShI1NFoDo5QGqJgEDiKaTSBjXcaorAw2Lio
+        e9FgeicP4eBCrUYz2aCsISILgw3eGksjAV9DLBYFHw02mmYYQTbItmUEgyiz
+        sbQSmTbEZ1GQsLXxHPUkzIAYUBTc+NyHkXPDPFtWcDO8bjR78NMQIuBj9cZn
+        38f3DRMNbGAYAjia1YUNDlJ6A/BhhaPJfCjiIFtvAYNYxbGEEt84RGZRkODH
+        sRw3AiaHyG6agQ2rvMfH3nrH9w9B4Uac5uh6tBGdQxVpYbCRn/eg4QvfwSM4
+        uGDS8Uw+AHWYrDeBrRDV0aQ2rHWQ0eHgol7HMt2MlB1i/I0dDANqR5dT4mwH
+        i2lhsFG442ls5O4wkTMAH9k7msxFAw+SeQPw0cLjySTCeJjL4uACkEf/lrkV
+        tDz4a+a2Ffwmsnl0QTkKeqiUDAJHSo8l4OjqIQIBgSOvRxPs+D2WMaBA7tG/
+        R9jg78HfJBwOw9jwe7Ht8r3QG4CNNx9PxaHpgzyMggSwj+fwce6DPN4CuZwc
+        /+NR2LcTY/BhDwfkG7y7YZ/AFoUPfNyDY5erJQcTS7GHm6WNqbtl2m3CCzUG
+        Fkjm5Hi+bmmC0xKLIk93bqKnJpuumwQ/IQkIH+gQS+DCue74gjQ0gV9sYh93
+        Ntd5eq2CC6osCr/k6S8qesfTNXaS4fmARZGjnMk6glDw5NIcL1Wbzn1k5Cxv
+        yEXxg3K4gupLEZ9fm4TPpCDJLjLweBhpeFfU4akxfczmr4otrZwFD/fk+8kc
+        R0Rno3nbVg9OTtbr9dhWA61TO6l03ZhS2V+SdEsbzPkRD+Rb1flKkaPc3bk6
+        K3+LKJzfghcTEvAlAr59tFHCHDfL/5L/bzJOOBK3v8NkRDFrM/dd6AuVfEIu
+        J/HYpHVetYMg0Sef1EqJdpRg7jOORA+3VqpOPs7U5+RMDv/5T/LPf53eOpx2
+        JXtvPDxK/s2FIsOZQrPMpB1t2h+n7LPraaEpdXggmR8cnaLZmIjR9uAG9QGD
+        qtmUKaJt3elTzhyVTU2qwwOqnObBQXI2YCpMquhixlVtWpOaIvmfxBqenDRN
+        cZA8kLTU6sFR8ufkYCwuzo4VNoQNjrqkkpHpU3Nw6ovUDEuElW+L0zzeXKrZ
+        a7XUfcH+eedfp0kzrnASVbavTabHeYmtv32ssdL14UzdTpojyvnXo0M8PjyR
+        E+H33YwOL2h04qK6jat5NTq9lU+TQxs2nO6Suyckj2mh6eE/qb9oH6Wp6cp2
+        dDsZ/fTo+O7db+/cuX//+O7oX0enX7R/wpMZKiWdcqM9fvmstsYZOK03XOV6
+        jWd1ZPVrX9j/0vTg1slJMs2vOCA8HnWWuHjsKGpb+YzmvDr8JK9UhuU/LNUq
+        n5EjqTH2US018+RPf0q+pMaWc5C/VdkBNeYgTpnvtjDZwZGr6S80kcebF9nh
+        iNYEYY91NOY+dOwKQzexabHRpqPT3RnY7jA+AxfF3eeA9xD7u0tTUR53qivM
+        4NfT4R3C1pVt6DhvlwXc+n+71TONXqcAAA==
+    http_version: 
+  recorded_at: Thu, 09 Jul 2015 20:06:51 GMT
+- request:
+    method: get
+    uri: https://flattr.com/submit/auto?url=http%253A%252F%252Ftechslides.com&user_id=iweczek
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.3 Ruby/2.2.2p95 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - flattr.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 09 Jul 2015 20:06:52 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - PHPSESSID=cr7et72udqubkfglblnvq0op62; path=/; domain=.flattr.com; HttpOnly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: "<!doctype html>\n<html class=\"no-js locale-en-gb aut11\">\n<head>\n\t<meta
+        charset=\"utf-8\" />\n\n\t<title>400 Bad Request - Flattr.com</title>\n\n\t<link
+        href=\"/favicon.ico\" rel=\"shortcut icon\" />\n\t<link rel=\"apple-touch-icon\"
+        href=\"/_img/icons/ios-icon.png\" />\n\n\t\t<link rel=\"stylesheet\" href=\"//static3.flattr.net/_static/styles/aut11.css?1363598573\"
+        type=\"text/css\" />\n\n\n\t<link rel=\"chrome-webstore-item\" href=\"https://chrome.google.com/webstore/detail/opjnhfkbdoopgfbefgbdkpjnbghffmln\"/>\n\t<link
+        rel=\"logo\" type=\"image/svg\" href=\"http://flattr.com/_img/logo.svg\"/>\n\t<link
+        href=\"/opensearch_ssl.xml\" rel=\"search\" type=\"application/opensearchdescription+xml\"
+        title=\"Flattr\">\n\n\t\n\n\n\n\t\t<script src=\"//static1.flattr.net/_static/js/base.min.js?1363598573\"></script>\n\t\n\t<script
+        type=\"text/javascript\">\n\t\t$(function() {\n\t\t\t$('.userbox h2').click(function
+        () {\n\t\t\t\t$(this).parent().toggleClass('active');\n\t\t\t\t$('#login-login').focus();\n\t\t\t});\n\t\t\t$('.userbox').click(function
+        (e) {\n\t\t\t\te.stopPropagation();\n\t\t\t});\n\t\t\t$('html').click(function(e)
+        {\n\t\t\t\t$('.userbox').removeClass('active');\n\t\t\t});\n\t\t});\n\t\tFlattrTranslate({\"Loading\":\"Loading\",\"Success\":\"Success\",\"Error\":\"Error\",\"More\":\"More\",\"Yes\":\"Yes\",\"Are
+        you sure?\":\"Are you sure?\"});\n\t</script>\n\n\t<!--[if IE]>\n\t\t\t\t\t<script
+        src=\"/_static/js/ie.min.js\"></script>\n\t\t\t<![endif]-->\n\n\n\t\n\t\n\t\n\n</head>\n\t<body
+        class=\"\">\n\t\t<div class=\"nav \">\n\t\t<div class=\"nav-wrapper\"><div
+        class=\"nav-inner-wrapper\">\n\t\t<div class=\"page-title\">\n\t\t\t\t\t\t\t<a
+        href=\"/\">Flattr</a>\n\t\t\t\t\t</div>\n\t\t<ul class=\"main-nav\">\n\t\t\t\t\t<li
+        class=\"catalog \">\n\t\t\t\t<a href=\"/howflattrworks\">How Flattr works</a>\n\t\t\t</li>\n\t\t\t\t</ul>\n\n\t\t<div
+        class=\"userbox\">\n\t\t\t\t\t\t\t<h2><span>Log in</span></h2>\n\t\t\t\t<div
+        class=\"user-actions login\">\n\t\t\t\t\t<form  method=\"post\" id=\"default\"
+        action=\"https://flattr.com/session/create/redir/%2Fsubmit%2Fauto%3Fuser_id%3Diweczek%26url%3Dhttp%25253A%25252F%25252Ftechslides.com\"><input
+        type=\"hidden\" id=\"csrf-token-default\" class=\"hidden\" name=\"csrf_token\"
+        value=\"1bb4cb2c362107ccce2d1db807b976bd70b166a5\"/><input type=\"hidden\"
+        class=\"hidden\" name=\"form_id\" value=\"default_666424e36e64854cfcc7c1b0063f73b2\"/>\t\t\n\t\t<div
+        class=\"login\"><label for=\"login-login\">Username:</label><input tabindex=\"1001\"
+        id=\"login-login\" type=\"text\" name=\"login[login]\" value=\"\" spellcheck=\"false\"/></div>\n\t\t<div
+        class=\"password\"><label for=\"login-password\">Password (<a href=\"/forgot\">Forgot?</a>):</label><input
+        tabindex=\"1002\" id=\"login-password\" type=\"password\" name=\"login[password]\"
+        value=\"\" /></div>\n\t\t<div class=\"remember\">\n\t\t\t\t<input tabindex=\"1003\"
+        name=\"login[remember]\" id=\"login-remember\" class=\"checkbox\" type=\"checkbox\"
+        value=\"1\" />\n\t\t\t\t<label for=\"login-remember\">Keep me logged in</label>\n\t\t</div>\n\n\t\t<input
+        tabindex=\"1004\" class=\"action\" type=\"submit\" class=\"submit\" value=\"Log
+        in\" />\n</form>\n\n<div class=\"login-connect\">\n<form method=\"post\" action=\"/login/connection/redir/%2Fsubmit%2Fauto%3Fuser_id%3Diweczek%26url%3Dhttp%25253A%25252F%25252Ftechslides.com\">\n\t<input
+        type=\"hidden\" value=\"facebook\" name=\"type\"/>\n\t<button class=\"zocial
+        facebook\" id=\"facebook-signin\">Sign in with Facebook</button>\n</form>\n<form
+        method=\"post\" action=\"/login/connection/redir/%2Fsubmit%2Fauto%3Fuser_id%3Diweczek%26url%3Dhttp%25253A%25252F%25252Ftechslides.com\">\n\t<input
+        type=\"hidden\" value=\"twitter\" name=\"type\" />\n\t<button class=\"zocial
+        twitter\" id=\"twitter-signin\">Sign in with Twitter</button>\n</form>\n</div>\n\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<span
+        class=\"menu-button register\"><a href=\"/register\">Sign up</a></span>\n\t\t\t\t\t</div></div>\n</div>\n\n\t<div
+        class=\"page-wrapper\">\n\n\t\t<div class=\"page wizard\">\n\t\t<div class=\"page-content\">\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"section\">\n\t\t\t\t\t\n<div class=\"block\" style=\"padding-top:
+        40px;font-size: 14px;\">\n    <img src=\"//static3.flattr.net/_img/error-400.png?1363598573\"
+        alt=\"400 error image\" title=\"URL is invalid.\" style=\"display:inline-block;width:409px;float:left;\">\n
+        \   <div style=\"margin: 120px 0 0 0;width: 400px;float: left;\">\n        <h1>Bad
+        request (400)</h1>\n                    <p style='padding-top:1em;'>URL is
+        invalid.</p>\n            </div>\n</div>\n\t\t\t\t</div>\n\t\t\t\n\t\t\t\n\t\t\t\t\t</div>\t</div>\n\t<div
+        class=\"footer-wrapper\">\n\t\t<div class=\"footer\">\n\t\t\t<div class=\"content\">\n
+        \   <div class=\"col\">\n        <h2 class=\"about\">About</h2>\n        <ul>\n
+        \           <li><a href=\"/howflattrworks\">How Flattr works</a></li>\n            <li><a
+        href=\"/wherecaniflattr\">Where can I flattr</a></li>\n            <li><a
+        href=\"/whyuseflattr\">Why use Flattr</a></li>\n            <li><a href=\"/creator\">Flattr
+        for Creators</a></li>\n        </ul>\n        <h2 class=\"tools\">Legal</h2>\n
+        \       <ul>\n            <li><a href=\"/terms\">Terms of use</a></li>\n            <li><a
+        href=\"/privacy\">Privacy policy</a></li>\n        </ul>\n    </div>\n    <div
+        class=\"col support\">\n        <h2 class=\"support\">Support</h2>\n        <ul>\n
+        \           <li><a href=\"/support/contact\">Contact</a></li>\n            <li><a
+        href=\"/support/faq\">FAQ</a></li>\n            <li><a href=\"/creatorhowto\">Guide
+        for creators</a></li>\n            <li><a href=\"/support/button\">Flattr
+        on your site</a></li>\n            <li><a href=\"http://developers.flattr.net/\"
+        target=\"_blank\">Developer docs</a></li>\n        </ul>\n    </div>\n\n    <div
+        class=\"col\">\n        <h2 class=\"tools\">Tools</h2>\n        <ul>\n            <li><a
+        href=\"/embed\">Embed button</a></li>\n            <li><a href=\"/extension\">Browser
+        extension</a></li>\n            <li><a href=\"/apps\">App Gallery</a></li>\n
+        \           <li><a href=\"http://developers.flattr.net/tools\">Tools and Widgets</a></li>\n
+        \       </ul>\n    </div>\n\n    <div class=\"col technical last\">\n        <h2
+        class=\"about\">Stay updated</h2>\n        <ul>\n            <li><a href=\"http://blog.flattr.net\"
+        target=\"_blank\">Blog</a></li>\n            <li><a href=\"http://twitter.com/flattr\"
+        target=\"_blank\">Twitter</a></li>\n            <li><a href=\"http://facebook.com/flattrcom\"
+        target=\"_blank\">Facebook</a></li>\n            <li><a href=\"https://plus.google.com/100033289677156554678\"
+        rel=\"publisher\">Google+</a></li>\n        </ul>\n    </div>\n<!--\n    <div
+        class=\"col technical last\">\n        <h2 class=\"language\">Language</h2>\n
+        \       <ul>\n                        <li><a href=\"/locales/switch/locale/en_GB\"
+        class=\"selected\">English</a></li>\n                <li>&nbsp;</li><li>Beta
+        translations:</li>                <li><a href=\"/locales/switch/locale/de_DE\"
+        >German</a></li>\n                                <li><a href=\"/locales/switch/locale/fr_FR\"
+        >French</a></li>\n                                <li><a href=\"/locales/switch/locale/es_ES\"
+        >Spanish</a></li>\n                                <li><a href=\"/locales/switch/locale/sv_SE\"
+        >Swedish</a></li>\n                                <li><a href=\"/locales/switch/locale/cs_CZ\"
+        >Czech</a></li>\n                                <li><a href=\"/locales/switch/locale/uk_UA\"
+        >Ukrainian</a></li>\n                                <li><a href=\"/locales/switch/locale/pt_BR\"
+        >Portuguese</a></li>\n                                <li><a href=\"/locales/switch/locale/nl_NL\"
+        >Dutch</a></li>\n                            <li>&nbsp;</li>\n                    </ul>\n
+        \   </div>\n-->\n\n    <div class=\"col catalog\">\n        <h2 class=\"catalog\">Catalog</h2>\n
+        \       <ul>\n                            <li><a href=\"/catalog/everything\">Everything</a></li>\n
+        \                           <li><a href=\"/catalog/music\">Music</a></li>\n
+        \                           <li><a href=\"/catalog/videos\">Videos</a></li>\n
+        \                           <li><a href=\"/catalog/software\">Software</a></li>\n
+        \                           <li><a href=\"/catalog/games\">Games</a></li>\n
+        \                           <li><a href=\"/catalog/podcasts\">Podcasts</a></li>\n
+        \                           <li><a href=\"/catalog/photos\">Photos</a></li>\n
+        \                           <li><a href=\"/catalog/comics\">Comics</a></li>\n
+        \                           <li><a href=\"/catalog/text\">Blogs &amp; News</a></li>\n
+        \                           <li><a href=\"/catalog/charities\">Charities</a></li>\n
+        \                           <li><a href=\"/catalog/unclaimed\">Unclaimed</a></li>\n
+        \                           <li><a href=\"/catalog/Profiles\">Profiles</a></li>\n
+        \                   </ul>\n    </div>\n</div>\n\t\t</div>\n\t</div>\n\t</div>\n\t\t\t<script
+        src=\"//static2.flattr.net/_static/js/footer.min.js?1363598573\"></script>\n\t\n\t<script
+        type=\"text/javascript\">\n$(document).ready(function() {\n\t\t$(\"#twitter-signin\").on(\"click\",
+        function() {\n\t\t\t_gaq.push([\"_trackEvent\", \"Sign in\", \"twitter\"]);\n\t\t});\n\t\t$(\"#facebook-signin\").on(\"click\",
+        function() {\n\t\t\t_gaq.push([\"_trackEvent\", \"Sign in\", \"facebook\"]);\n\t\t});\n\t});\n</script>\n\n\t\t<script
+        type=\"text/javascript\">\n\t\tvar _gaq = _gaq || [];\n\t\t_gaq.push(['_setAccount',
+        'UA-13236450-1']);\n\t\t_gaq.push(['_setSiteSpeedSampleRate', 10]);\n\t\t_gaq.push(['_trackPageview']);\n\t\t_gaq.push(['_setDomainName',
+        'flattr.com']);\n\t\t_gaq.push(['_setAllowLinker', true]);\n\n\t\t(function()
+        {\n\t\t\tvar ga = document.createElement('script'); ga.type = 'text/javascript';
+        ga.async = true; \n\t\t\tga.src = ('https:' == document.location.protocol
+        ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; \n\t\t\tvar
+        s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga,
+        s);\n\t\t})();\n\t</script>\n</body>\n</html>\n"
+    http_version: 
+  recorded_at: Thu, 09 Jul 2015 20:06:52 GMT
+- request:
+    method: get
+    uri: http://addthis.com/bookmark.php?pubid=ra-4eea158d06720720&s=facebook&source=tbx32nj-1.0&title=Sample%20Files%20for%20Development%20%7C%20TechSlides
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.3 Ruby/2.2.2p95 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - addthis.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Date:
+      - Thu, 09 Jul 2015 20:06:52 GMT
+      Server:
+      - Apache
+      Location:
+      - http://www.addthis.com/bookmark.php?s=facebook&source=tbx32nj-1.0&pubid=ra-4eea158d06720720&title=Sample%2520Files%2520for%2520Development%2520%257C%2520TechSlides
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '295'
+      Content-Type:
+      - text/html; charset=iso-8859-1
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA21QQW7CMBC85xVupPZGnIRSqtZxpRJQkaBFIj306MQbOcWO
+        LcdA+T2OuVZaeWdnZqX1kLvya1H97Jboo9pu0O77fbNeoHiC8XpZrTAuq/Km
+        5EmK8fIzphERTklKBDDuB9c5CXSaZmirT8DRDqxiPfROXgi+iRHBwUxqzS/j
+        fkb/8Xo2IoZWAhDXzVF5Ggk2IBWshCFhoS1i4Zx5wfh8PieMcye6IWm0wrXW
+        B8XsITHCvA1FyxoYqQemzOugj7aBwtV/07z/nWRJGmhzrDteWDZ5BGDZ7Jmn
+        T/M89RXUcHqx91DCfT7L01UnYQio1Tb0Ek4gtRkvDbN/5ouAKmjEXnYchpgK
+        sEAwownBZowihOC/O4YYXQG5CgByfwEAAA==
+    http_version: 
+  recorded_at: Thu, 09 Jul 2015 20:06:52 GMT
+- request:
+    method: get
+    uri: http://www.addthis.com/bookmark.php?pubid=ra-4eea158d06720720&s=facebook&source=tbx32nj-1.0&title=Sample%2520Files%2520for%2520Development%2520%257C%2520TechSlides
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.3 Ruby/2.2.2p95 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.addthis.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Jul 2015 20:06:53 GMT
+      Server:
+      - Apache
+      X-Powered-By:
+      - PHP/5.3.3
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '339'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA21Ry27CMBA8t1L/YesLB0S2iBNVkkMBqZWgRShVywkFvCVW
+        nQf2pgl/3zwIohU+2KPRzM6s7N5P3ybBejmDiGMNy/en+csExADxYzRBnAZT
+        +HwOFnMYOg8QmDCxilWahBpx9ipARMzZI2JRFE4xclKzx2CFZT1rWJtPcMAX
+        TkeyFP7drdsklrFOrHdlznA8Hrf2VkyhrF9WrMlfKGtVsocVHXJlSMIyNGFM
+        TMbFVlFJtUq+wZD2hOWjJhsRsQA+ZuQJppJxZ62AyNDXn/xQSo6UdXZpjI0R
+        q+YU273T6LEejac6Fdym8lhTUv2Akp4oTJhlZOrSN2eycm/TsuH+kwOVJK0c
+        Ls46zU3V/ZCTZVAW4tPCHFFDN0tn3dLQy43uOe7WoN9c/c2mXyVhFXU1MzQm
+        LYR/FnSge2vULYb1H1TgF9yDjJ0rAgAA
+    http_version: 
+  recorded_at: Thu, 09 Jul 2015 20:06:53 GMT
+- request:
+    method: get
+    uri: http://addthis.com/bookmark.php?pubid=ra-4eea158d06720720&s=twitter&source=tbx32nj-1.0&title=Sample%20Files%20for%20Development%20%7C%20TechSlides
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.3 Ruby/2.2.2p95 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - addthis.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Date:
+      - Thu, 09 Jul 2015 20:06:54 GMT
+      Server:
+      - Apache
+      Location:
+      - http://www.addthis.com/bookmark.php?s=twitter&source=tbx32nj-1.0&pubid=ra-4eea158d06720720&title=Sample%2520Files%2520for%2520Development%2520%257C%2520TechSlides
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '295'
+      Content-Type:
+      - text/html; charset=iso-8859-1
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA21QQW7CMBC85xVupPZGnIRSqtZxpRJQkaCNRHro0YkXOcXG
+        lmNI+T2OuVZaeWdnZqX1kLvya1H/VEv0UW83qPp+36wXKJ5gvF7WK4zLurwp
+        eZJivPyMaUSEU5ISAYz7wXVOAp2mGdrqM3BUgVXsCEcnLwTfxIjgYCaN5pdx
+        P6P/eD0bEUNrAYjr9qQ8jQTrkQpWwpCwsC9i4Zx5wXgYhoRx7kTXJ61WuNH6
+        oJg9JEaYt75wQ+cc2AemzGuvT7aFwjV/0/z4O8mSNNDm1HS8sGzyCMCy2TNP
+        n+Z56iuo4fJi56GE+3yWp6tOQh/QXtvQSziD1GY8NMz+mS8CqqEVO9lx6GMq
+        wALBjCYEmzGJkIH/7ZhhdAVJVhlcfgEAAA==
+    http_version: 
+  recorded_at: Thu, 09 Jul 2015 20:06:54 GMT
+- request:
+    method: get
+    uri: http://www.addthis.com/bookmark.php?pubid=ra-4eea158d06720720&s=twitter&source=tbx32nj-1.0&title=Sample%2520Files%2520for%2520Development%2520%257C%2520TechSlides
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.3 Ruby/2.2.2p95 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.addthis.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Jul 2015 20:06:55 GMT
+      Server:
+      - Apache
+      X-Powered-By:
+      - PHP/5.3.3
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '339'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA21Ry27CMBA8t1L/YesLB0S2iBNVkkMBqZWgRShVywkFvCVW
+        nQf2pgl/3zwIohU+2KPRzM6s7N5P3ybBejmDiGMNy/en+csExADxYzRBnAZT
+        +HwOFnMYOg8QmDCxilWahBpx9ipARMzZI2JRFE4xclKzx2CFZT1rWJtPcMAX
+        TkeyFP7drdsklrFOrHdlznA8Hrf2VkyhrF9WrMlfKGtVsocVHXJlSMIyNGFM
+        TMbFVlFJtUq+wZD2hOWjJhsRsQA+ZuQJppJxZ62AyNDXn/xQSo6UdXZpjI0R
+        q+YU273T6LEejac6Fdym8lhTUv2Akp4oTJhlZOrSN2eycm/TsuH+kwOVJK0c
+        Ls46zU3V/ZCTZVAW4tPCHFFDN0tn3dLQy43uOe7WoN9c/c2mXyVhFXU1MzQm
+        LYR/FnSge2vULYb1H1TgF9yDjJ0rAgAA
+    http_version: 
+  recorded_at: Thu, 09 Jul 2015 20:06:55 GMT
+- request:
+    method: get
+    uri: http://www.addthis.com/bookmark.php?pubid=ra-4eea158d06720720&s=hackernews&title=Sample%20Files%20for%20Development%20%7C%20TechSlides
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.3 Ruby/2.2.2p95 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.addthis.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Jul 2015 20:06:55 GMT
+      Server:
+      - Apache
+      X-Powered-By:
+      - PHP/5.3.3
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '339'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA21Ry27CMBA8t1L/YesLB0S2iBNVkkMBqZWgRShVywkFvCVW
+        nQf2pgl/3zwIohU+2KPRzM6s7N5P3ybBejmDiGMNy/en+csExADxYzRBnAZT
+        +HwOFnMYOg8QmDCxilWahBpx9ipARMzZI2JRFE4xclKzx2CFZT1rWJtPcMAX
+        TkeyFP7drdsklrFOrHdlznA8Hrf2VkyhrF9WrMlfKGtVsocVHXJlSMIyNGFM
+        TMbFVlFJtUq+wZD2hOWjJhsRsQA+ZuQJppJxZ62AyNDXn/xQSo6UdXZpjI0R
+        q+YU273T6LEejac6Fdym8lhTUv2Akp4oTJhlZOrSN2eycm/TsuH+kwOVJK0c
+        Ls46zU3V/ZCTZVAW4tPCHFFDN0tn3dLQy43uOe7WoN9c/c2mXyVhFXU1MzQm
+        LYR/FnSge2vULYb1H1TgF9yDjJ0rAgAA
+    http_version: 
+  recorded_at: Thu, 09 Jul 2015 20:06:55 GMT
+- request:
+    method: get
+    uri: http://www.addthis.com/bookmark.php?pubid=ra-4eea158d06720720&s=reddit&title=Sample%20Files%20for%20Development%20%7C%20TechSlides
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.3 Ruby/2.2.2p95 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.addthis.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Jul 2015 20:06:56 GMT
+      Server:
+      - Apache
+      X-Powered-By:
+      - PHP/5.3.3
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '339'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA21Ry27CMBA8t1L/YesLB0S2iBNVkkMBqZWgRShVywkFvCVW
+        nQf2pgl/3zwIohU+2KPRzM6s7N5P3ybBejmDiGMNy/en+csExADxYzRBnAZT
+        +HwOFnMYOg8QmDCxilWahBpx9ipARMzZI2JRFE4xclKzx2CFZT1rWJtPcMAX
+        TkeyFP7drdsklrFOrHdlznA8Hrf2VkyhrF9WrMlfKGtVsocVHXJlSMIyNGFM
+        TMbFVlFJtUq+wZD2hOWjJhsRsQA+ZuQJppJxZ62AyNDXn/xQSo6UdXZpjI0R
+        q+YU273T6LEejac6Fdym8lhTUv2Akp4oTJhlZOrSN2eycm/TsuH+kwOVJK0c
+        Ls46zU3V/ZCTZVAW4tPCHFFDN0tn3dLQy43uOe7WoN9c/c2mXyVhFXU1MzQm
+        LYR/FnSge2vULYb1H1TgF9yDjJ0rAgAA
+    http_version: 
+  recorded_at: Thu, 09 Jul 2015 20:06:56 GMT
+- request:
+    method: get
+    uri: http://www.addthis.com/bookmark.php?pubid=ra-4eea158d06720720&title=Sample%20Files%20for%20Development%20%7C%20TechSlides&v=300
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.3 Ruby/2.2.2p95 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.addthis.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Jul 2015 20:06:57 GMT
+      Server:
+      - Apache
+      X-Powered-By:
+      - PHP/5.3.3
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '8530'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA6Vd63bbNrb+PXkKjn6M7TWxnEtnOo3jfVbSXJpJnKSx20w6
+        a1YWREISI4pgeJEsz/SBznOcFzv7AoCUG2hSKHUXN/a3iY8AQRCggL0f/vHJ
+        m+8vP7x9mszbZQG3HtIhuVoWZXM2mrdt9eDkZL1ej9f3x6aendz97rvvTq7I
+        ZkS2WmV4aPO20PAoyy7neZNcmDRXRfLYmMVS1Yu8nCUXc1XT8XHXtqZM3ufZ
+        TLcPT+S8Ww+XulUJcR3rz12+Oht9b8pWl+3x5abSoySV1Nmo1VftCXGfJinm
+        2Oj2rGunx38bJScul1It9dko001a51Wbm3JweuKuEP9UMq21TtZqk7QmmRjT
+        tElbq+k0T5OJShek3ZiuTpq81clkkywVlyRvE62aXNfJ1NTJKkfY1A1ZN3hF
+        Ws6xjL+5rIXerE2dNYNr4rNu0wVwZd3GbIvCrG9zdkjYQ5xQ2UrXbd7ourmd
+        tDqdl6Yws83tJFPI0qS5LlPMrpFbUOvULJe6RBBrAs/gwhisl2V+zbrbyVoX
+        aIRFVPXtpCq6Wc6GkoFN/6Ygqak2dT6bt4OSfO90yWF6lNy7c/cvrr5/czrf
+        98Gpv7flSIZFXi6wiAVejipNmaeqGCXzWk+32q3KshbzHmMhT1xVjqt5NchD
+        zjk5SVU61+6ENCv5HMzj5O5f7nx752/p/b/eSb/79qRpN4X2ed0fpw2WkK+D
+        kWau6QpbbLq2xbLBCTyUNjlEPqmVEu0oaer0d1zEp6YvzadmBA9PJB8s004a
+        uKXaj6W5KrKzu6eW5WPVTc5GtTr+Rmt19y9/y+789dt7d/Bv5C1MWRiVJWfJ
+        P5NpV6bUdA6Pkn8nmUk7bGDtGO/K00KT+HjzIjscYQtd5ak+nuZFq+vR0XiK
+        ls3h0Wnya/Ivn21XY631LNwuzkYXalkVOnmWY2XyY/ZEr3RhKso9+U9yic3+
+        osjxGR+d3lopfESFq8HL+3eSHNy9c+daLQqVmcXBg9EgNbqdHNxr1Qy195JL
+        NeM0tYClJpVIpFTffasmOeoescCqbNpuSENHUeTTkm1YENXqc02aJz8nP77D
+        5p1Jbkt1bcp13syLvGkJZ4VAumTyRygk5/qPrMyXpDFF8iqf6qattVqy3hRL
+        lReEvXmVnKPI2qrRZcN5vL0giZV1a0iDB05eq0zP+GJFIuVEqZKq4jEdRZFn
+        HSvwKIqiaOt8ollZFJckM6BVi/VKapFYmc9muq5MutBtQxCn30paDNpiw0A7
+        LjaiuW66maI6Q/GCRFYXqszIkI5JqxbYE5QC4C2ylfjYyQIYImM1S165cbqN
+        Uy20Lq2SRKemJ6mxepYF6OpKFXmam07AQZoNzKTO8H/CrCjq8tpMzBWrUXxs
+        rkgtveqgQy81F6VXvNZSHqvZpNcDfDNOrz2q6wV27NrBnBRQWK/Gpc2rVnmZ
+        T7kirCjqTabrnLUssbLLso2vCUqc+6roplOpYRZEdX19zfmyQKpULTeGmt73
+        LIiq1vdYg0dSTI3JihVd+fdzXdcb7uO5XaXz/DOr88+czLHLojQdRdHqrsgX
+        fC7KP71CmYFCNQ29AKpCpYw6xVtSiIlWZYXvkpZhTLylhIcaJZdE8gXKDJRZ
+        To/I93RkhSnyVa5IJdJYHnF+E+s6Y2C57Ohl1EoWpllKod5cnOc/sqppJqrR
+        bHxxkTwmmfVdjSdxO/uexfFPXPOZ7hvgEz1ofHhRKu2KFo2lIT1BxfeisPhM
+        tDOXzFtlNShZpRGNkaRLOwWODYq5oRufmXMWRd0iZTM3XYt/dIJpse1eWIWY
+        dBNVMkQCq2qF4wlN3dsTK46LlSCm+oTDLkZEZHXHPdKTTjqkDLtNukl8JIWe
+        qrTli3v6jCVWLrrMUGXplySwqkDLslUV9Z4uMa64A9W2U326tD0qHbn7ZE3y
+        qKrEDEdICxxFMWBlBnBEVpqWruupFVl9hcNJbI70fHiZgetNUxmqs6fXmwuU
+        uGfAkQO+IOaG3wbP1ATfeU0+41qbqklX4C0vNt/cEdAnBU419QgMiUjqvMQ3
+        J75ocqmyZypPXgxU3GrnVBHphmE8Sm615FQvXDLH8aNVkSjqZp4b6n0F8SkB
+        V2pSMOmjn0mySt2w7cqlsaPl/ktEqzQ1PtfSrz1zKfuQWbRrekyeg2le4uVj
+        z/qpy/np31awSaEW3Hs9Y0FUeTUxih/aZ06W/qlYsJKOoqiXDXUdM9a6hEBd
+        3XzusP9iyCVc7eIUI8t5tKRqrmZUPPEKzqDWeEouGEmixHF8NtXcRzzjxDMt
+        nQSOvqhLxMNbTuKwgtN0JMUMhxSLPJXCPvcJhujynz9nMZ/iqIyu6LlIYxn4
+        zPIZdk0L7kye57PHLAuw0oreuAys9KNXKDNgn57n7umZmRU99M/NeFVK2mSl
+        MeuGlSZLXlPCIjNuJs9Z6FX4sJRNodoeSy6dqrf6iJOTBlvyR55CedM/96+T
+        GY6csHCZntCBLETxRBRkMldUO6Xmy/uBE8lrLdc3R6NSsZ4EzrHoVk2pqMZ/
+        wPrAQStOpJhrrnFiMjczzsfJ7hWMY1vsm2wX/oNPMGRM23Q5l/UHlC9IFqDF
+        4c0Vq1mySlvfP4hEyvX9Fd4anONxR/jD5fmr5Gen4J4gw3EzvpAQfGFFVs/x
+        UZxxR+RE6TcyfcU5vRBJlPhsV6rSoncJhkw94cvM35DAqlpX2lb5i3dWHvvb
+        ktMwSPNoOr8QkdXrfE2q9/l7Sn7Ctmv7yb9bUdRVtWEdHpNL37g/4bSZ9XRk
+        RbescKxPNf53K5J6oSY0/KDqfmlFUetVV7OSBFHlV3nJKhISLIhq5N7gQ4FN
+        mh7alyKxMqeH42W+kESJOecta0hMXvDlLwqd0WW+pCMreILeSt/y0icIwuau
+        sH/WtcLBBKKvVOIUDOeTGodt9KJ6ZUVRZzygfpU/efQueVPiQ6tFXy6wMyoZ
+        IvFF6dTNDCfXurZIkzznpEfpvjUW5JvYOKj7ZNXdJzs0xUGR/oTdYKkKhlb6
+        75JikOYCdT9Wf8XpwYhdpHvfMCYiTX/5pbyh5l7TaIBmPuO6k1d1PaPvA6hF
+        cYzyOC8tILO6cxZEhSXh0d+5SE45MfwOOLciq/W9jN/cIogqL1fXrMrLn38R
+        1aLjzzQ0oDn3CYGW9EWC9Sw5JY+4z1lwZaDXXaE3rBcxebGsTN1aFKd/WsD/
+        +1+11K6aWdXg5M9W3hL7FV2vDbekc04k7400pR77yK/WAZw8eSoWV3xleOCk
+        wbl8w6Ogcyu6yzX5ou6YQyRW1il2dWuDIwSq4OW79PXTdv3m3Uu5dU0lo/Jz
+        kUS5yrNGWt1y87PIBJTfUN6vv+H3VKkanrw31Hm9psQxpxjTLbYX0uv2lYwf
+        ULXCKWojShad2nTXVouSKNfNUk9kzEld/rl+bEedBLV1x9NMQi5JdsAq5/HU
+        ayuyuvuU05Pwmo6koDceXWdT5ov8IzfaN0MV2yxwpJhf55TZm5ev37DMQIVd
+        AL5ODHfCbzB1OddPjHTEZrMpqC7e0JEUWJ8LqoS3dBTFFMvLd1lEO3qqsqnh
+        zoCMnzwb9AyILDddXQiw3Pz07hWr5/hyxTEX1eZbknHMxdWJA9lyU/G77K0V
+        rfrKiO7KiKLjseRbOrKCvwWQhgVR4X3XPIl8a0VW09RMRkHcq/NU7ZlNswE9
+        awTQkRSf6yl3Az++e2a7gM91U6esuahT143g6KxsU8W39kcnM2CnFj+6qUWt
+        s4wb8zsWrCqfTkWFQnK+eatmznjRLQV52S1F1WhVp/OZjGPe2eRzO4Zp1FRT
+        Fyod/0WfYjA1puI+/4KksWq9Nu+1clGNxlcIz7MuRBJlodP23kxjQ6oZ4vRz
+        TrMBvfHnhLAgKt2aIuO+5mKuL1E+l0vF0fRa5xO6uRcoJ+8pwchiUxt+gC5E
+        Sh7bkTxOernZX5y/4KTJFP1WQBoUceyUiRp7Rs6WBVZVONaQEdYFihcoknqT
+        53xyhSO4zH49klF4xbl6mYFW1a2SE6zo1YVkbUVRm3ojX92lriidPLMKseiy
+        nPt+lqTzR3E6tbfDila9xClPV5lSEEr9VMnnPgIrbDvKQiwz0BWipKMo8PG8
+        5lshkiirSc3V9dPb5PG7N6Kjhj+b5PwOu+hTDNLLmNR0ZMUGZ64Ff6C5sCKp
+        W6Wuif6SjqKYWcXMKbB8HQ+zL60oaqp2sWSJP2BiI1vrCZabv+Jh74UtZoJN
+        A9MCY0vHy8x5CHjZpyzYlDhfFqR5jaKo6xxvSMlqErH/snqzrnIez106mQHD
+        HQe+tqSxtKaiHz8KGuxz5qa6kDSjNL2Y6pru/6WTGehoPEZaFkSFT+pnVpEg
+        KrzLfC4LrMKXA42KL+nIinVuB1mXInklFtNq+ccSUm8qLe36UiRSdpWdpvzE
+        gn38sd9W3aTBlrrgPv+nPk3wKleZptv9MwuiqiesqCeSpHq5xkFKI7OQn0WR
+        nJsyubCTkRU94z8vTNmqhdPgq7/L6u5aU/WsXlLyCScZNlemok8CdN6bf4jM
+        wGZS4+Sk4W7GJpKLcx6DrHFsW9DFvmeBVNjt8x2jrlPGPO/VZmLf0zwypRrF
+        5oVXqzfjpyu8S8yDDdBW13uRrNJNFlHrJyRr/nhatmv+MPweB0YvKYmtltvY
+        GieCDU43CCPRfhDKsLPFyzOmaNZzwyV9T8fklTGLjk3WOPSXme97kZLnin6/
+        kovBadKUO+73KD2Tjpt+JViiLZcK5XOSGcCRKXZ+DWeG8luSBVjjqJW/FLw3
+        68ck8utH5Y2mHyNXRr6JvKdPKclbvA84AcyVfLtabxaGy0VHUlwpeZz/QUdW
+        yAvqHy9e84Bso3DCOlnQq+7DH/0PdY2H7OwUMff7xEbhnIaK84EFUdUZfUCz
+        apeQfp6/Unywnyw3SMCf8j6wYFX2O8QHkURZd8u02/A7+INPCNQtzYTV3bnh
+        Jr/pugl1Dh/oSAr3A5F0Db/YlJu9X+fptaKRxC95+otKRVXOuAX/ggK+JZNf
+        5Zco90NWasppPuPfo7r8Y9fojw2O3D9Ke3iQ4OBS3yZEFB8rbO+NU1e1ybq0
+        fUCTk6vj+3fuHGDmW7nLL82ceV2g3cHthH85Q/Grfzo7uIW5+t//hPJsZBlH
+        SHjra39RdD9cNt9u/dbq8l7zL7Y3f6M8kZUDtx5OTLZJ+PP92UjRz5P/7efL
+        fJocEmamhx9xLHX0x7Ozgw6nTfgKwYeAfpN0zGpyNjoenSZ0BgoJWiYHx2hC
+        5427PBOYU41L/XrL/b6ZmGV62KzSo39TBnKnxmSc/OlPySA5xpdHurC5sjxO
+        9eqQxhUHt3WTqkpzNkentcb3Zsm3+XTAU89XyaGhKzdjronX2Fbw9g5S41rz
+        LxuHB6qdmxXe8IODo62LbXwmdLXDU/mDzpvp4YhPHR0lWA3Hd4+2yP6MNZNI
+        1qfUlvs7deshff1MqHpUS+IoUcx4Ntr+NX2JY0uDVjSip9uYl1Xn7uI8zzLs
+        S20u+LjIMgAWV6roUH50efyFH6BPjt1/8nN9KFOcYrpMG5/l7lMa7BtTfyku
+        ZU91z8HOHNrWnU2SPfO/nFN1E3cSi/asL/32vjOf1HOn7VcWGBu8O4fFrzup
+        LvxJJH7VSXZ5x9ZaD3vi1/+0v5OhwHmSzZ9FmzvBu07Dp5ZOcqf65FeVin8n
+        +thqLMCgDd/U/o6ssEtvtrMRzdc13/V0cG9c6qtOzac1njQ4e6D4qgyW+Lbo
+        b7BLfd1lp7XWZTM3vv0ONV+VBb5Q2nl/CznxVSfOtaxYkjNd6qtOrdXar+mS
+        04earSxwpmjZcMBdY0+Y4D+vladBlB6wrz/KD0eU/iRvM78LPFbFt+ZdZKjg
+        dzxGD08q7MSH2fXcJ0hur28guku1K3cG11qoiS6I7uzm8p6EVz5x55/Ty+GB
+        mjSm6Fp9mhR62j44/g7/6eXpCNx6rgvJgIqAGTw84bzh1h/+YO+BKRd6wwNe
+        rGt5b9p3rilf6g0Pfw81DfePTkdi3VX8SJMNXdYhD0X43tz2S4TwxZm2LnFA
+        p3KrvFGafuyBJcPJ99noPvbH+FLAKeysnZ+N/iLd86Dq3MHVnm8cgZvbG/rL
+        8bZNoIH4ZVI48J2YKz/QwcGP6or2I98Er71/7+r+PdGNnPLBb0Z68FDJ2rXS
+        yDcQLL2qccR2NvrY6GJqX9o2zwmvwvs4XFN18+K+YAKDxMMTFUVJ67ZCXIwB
+        L+mKzt4u/goxWBisEEsjC8tCLBYFWXUWzcEr1EIUDAKvYosn4AVvQQZGQZbF
+        xXOsPtdhCgJhsMwummZraV6Qb9sKZP1ePCet+QtzMQpuQWA0S74MUiAE28sL
+        o1lkSWKQycLgFixG88gixyCPhcEugYymofWSIQ7CgFZURudu116GCCwMdo1m
+        LA2v6wyRCAi85jOegNaHBgkIBF5DGk9g152GSZwB+HWp0WR2BWuIysJgV7pG
+        0wxXxwbJtoxgawVtPHFbBF8HAoKsyI1nkFW8YRKLg1vkG81EC4KDNAzC1qLh
+        eCK3uDhI5gzAL0SOJ5MFEEEqgcEulNiLJtwSBBWS+KbgFlXvYGEc3PLrfZjk
+        0/MOKjEAv6Q7nmy47DtIODSCraXi0cRuTXmI0+HgVp/HM8mK9TCTxcEtaI9l
+        +tIi+BDrF21he718fIn9GvtwoXsTGK7C34vTrtzfSepsoF/cH8+546by/eSt
+        AtHZuz0FIQ6Hg9t9EM8k+xSCRAKD3c8QTeP3QASZegvoN0nE8/F+iiAXoyC7
+        LuI5eINGkINRkG0csRyy9SPEYVGQfSHxHLSHJEhBIPA+k1gCuzclROFgGO5c
+        iS4MbXMJlYUwoI0w0bnzpplQ9gwCb6yJJ7CbccIkzgD8Zp1osq0NPkHGbSvY
+        3gUUz+12DoV5vQX0W4v24qPtSDvp2AD8dqVoMt7aFCJiEHj7UzSBbJQKUlgY
+        +g1VsUxuE1aIyuMw2KMVXyza1xUuFaMgm76iOexGsSCLw8HvI4umsnvPglQO
+        B781LZbKb2cLcfUG4Le7RZNtbZELMm5bwWAf3R7EwceKMSKJfqjsVr5dBASD
+        3ei3B03whc4YEUS/zHmvYTh7m/8+BHbvYpDD4eC2NsYzDbdDhvm2rGB7z2Q8
+        N2+vDHIyCrIJM5rD7tYMsjgcBvs648nsBtAgmcXBbRWNZurCHzIZA9p5Gp07
+        LyUPZc8g8CGWwO5+DVE4GOze2Gga3k8bZBEUZLNtNIffoBvk6S1gsIM3mnDX
+        7xYCAu//jSWQXcQhBouC32IcXw63FTlYFmcAfttyNJnb3xzicji4ndDRTH7H
+        dIjKG4AXo8lkR3aQysJg92tHf/jq93gHv3cNTKDfBR49mx1uFQ9NaYc2MNxc
+        Hs9qd6EHGS0Obr96LNNwj3uIbcsGbm6Dj55r2K3zwbmGw4F31sdXZb2jGmuu
+        wjq6+tzm/l0MjIPb+x/P1HsICJL1JjDwKBBPyV4IwnQCg/VRsAeNDva9AsKz
+        Pebnzk/CDgrBQaQ9eJzrhR1U3gSGzhn25AzPBHsD8A4fosm2fUKEGLetYDsd
+        zS1OJ0KcgoK4pojncC4sgjTOALy7i/jPpOQaI/iRlEBg9xnxBN7LRpDFW0Dv
+        kyOez7vuCPJ5C+gdfezz/thyDrLrRbJtCNtORKJLbN2NhIprYbBuSeJpnCuT
+        MJO3gN7XSTRfVwa/ejMG5DolOnd2sxLKnkHgQyxB774lxDKwgN6/SzRf8Pmi
+        T1TPn0fnK25lgplbGHr3M/FM1mVNmMsZgHdpE09m3eCEyZwBeDc50WS7pqgC
+        wvN9pqjkqieYP2HAXnzis7eef8IczgB6z0B7sM3Cwz2LgvgI2o/DuyfaTdab
+        wU0nRtH8Ww6NgvTbVrDt9SiWu/eUFOIdWMDAlVI8IXtdCpIxCuKbKbpCrT+n
+        YFU6HAbunqIL5NxCBcvkDWDLhVQ0Ye9pKsTYW8APXo7mc76sgnTeALyvq3gy
+        8YoVpBIYrPesPWh2dcMOBuuPK5Zm4MMrRDU0gW0vX9HfT5w7sNC3E4eDcxwW
+        zeQ8jIWYHA5Oiv8mJF7Lgp+DBAbr3SyexjtBCzJ5C+hdpkXzsZu1IJegID7Y
+        ojmc37YgjTeAG37doimtL7ggo8PBuYqLZlrn6yALYUCe52Jzd97qQgweB+fM
+        Lp6pqoLVJSAMneNF85givG5cQGBne9EEzitfiMPh4Pz3xTI5n38hJo+DcwkY
+        z8TeA4M8jIL4GIznIHeEYQ5GYdtpYTSXdW8YIrMwWDeI0TR5cEJFELzMoydR
+        zhFjOH+Lg/fTGE3FPh1DPAwC+32MJujdQ4ZYegvonUnG8m05oAxRbhvBq95J
+        ZTSt82YZYnQ4OL+X8UxZeNuKgDD0oxnPI743w1QWB+eacx8m685zF5kzgaHD
+        z704xS/oLkqxgN6L6D583addXIiCd0saT+NdmYa5ehMYODuNphw6SA2SbhnB
+        lhPVeGLxthrmtDgM/bJGL42wvlyDiyMcDtbVa/waDHEPG16FYXHovcfuwbVj
+        A7lFQdzRxnOI49ogicBgHdzuQ8OecHfwMA7OZ240k7jXDfEICnKM5yDHvWEO
+        RkG8+sZzeOe/QR5vAb2r4Hg+cSocJBMYrPPhfWjCG24sCt6bcTyNuD0OE1kc
+        bjhI3oNQqx0Pq4XBuVze5xWy691BDNaDc3RRvGfnYGl6Cxj4fY4nvAq3CMKA
+        fEhH526dTQcZHA4Dt9TxZOLAOsglMFhH19E0A+fYQa6hDfT+s+NfseJpO/iG
+        FRisR+54GuvFO0zkDMB7+Y4lK78J3iqC4PU30T9X9n7Ggwy9BQwckUcTsvPy
+        IJmgIJ7N9+AQF+hhFsHBOUvfh4ncqu8gIhis+/V4GueyPczkLaD36b4PH/uB
+        30UnBuD9xO9Dxg7ld3AxDs71fDQTu6kP0TAI7Mo+luCm+/sQ12/sYMtLfjS9
+        86wf5PUG4D3vR5P13vqDdAMTGPjzj6Zk3/8hMgaB4wPEEnBMgRCBgMDxBuIJ
+        JEZBmMPi4EMYRFO5sAdBLm8AfViEPdg4lMIOMsHBRVqIZnLRGYJU3gB89IZo
+        MhfmIcTlcHABIfZgugoO/gQEDjART9CFl1QLCBywIppAYluEGAQFceoTz2FD
+        ZQRZLA4uqEY00zAQR5Buywi2gnVEE3NgjxAhg8DBP2IJOGBIiEBAkGAi8QxN
+        HZyiCwg+OEk0iQ9iEiLyBuADnkST7drRJiD8uM+ONgm6EmKwKEhElj048ul0
+        BwehsBXiZQ+qRRf8JGRRkJgx8Rx9nJkw08AGhqFoovcyDQLWhPYyDUxgEOAm
+        mlKC4gTpLAwuZM5ePOFG6GBwQXiieWy4nhCPhcGG9YmnGYQCCpMNjZByEC4o
+        mlgiC4UYBQWJPxTPYWMWhWmcAfiYRtFkLg5SkMwbQB8nKZpNIioFuSwMw8hL
+        0VwUrSnIxCBcnL+Izt5GfwoyOBxccKh4Jo4jFeRhFCTaVDSHjVAVZHE4uABW
+        sUwU9CrEwhj4eFjxhXFxs4KlcQbgxWiy1gbjCnE5HFzYrr2Yih33yOHgIoHF
+        Mw2ih4XphkawHWEsnpmjkoU5BQYbs2wPGgluFuYRHFwYtD2YXOi0HWTeBAbB
+        1fahlCBsOwjFAHzAtmgyDu4WImIQOABcPIGEigtSCAw2pFw8DYWhC7MwCjZG
+        XTxJH8kuyNSbwCDyXTQlR8kLkTEIHEkvmsCF3AtxOBxccL5YJg7oF6IREDjY
+        XzzBbBfBTAhm+xDYKINBDouDi0cYz8SRC8NEAiOPRDiM5umjIga5BiawFTcx
+        nrSPrhgk7U2Q1Cf2oOQIjjv4BCcyDvAYzyRBIcNMFgcfM3IPKhtbMsxlDcDH
+        oYwmM+FvbYwBh7WMz34QCjPMMzSCPlxmNKsPqxli9AbgQ3BGk0m0zhCToCAx
+        PeM5OPxnkINRkCCh8RwcTzTIwShI1NFoDo5QGqJgEDiKaTSBjXcaorAw2Lio
+        e9FgeicP4eBCrUYz2aCsISILgw3eGksjAV9DLBYFHw02mmYYQTbItmUEgyiz
+        sbQSmTbEZ1GQsLXxHPUkzIAYUBTc+NyHkXPDPFtWcDO8bjR78NMQIuBj9cZn
+        38f3DRMNbGAYAjia1YUNDlJ6A/BhhaPJfCjiIFtvAYNYxbGEEt84RGZRkODH
+        sRw3AiaHyG6agQ2rvMfH3nrH9w9B4Uac5uh6tBGdQxVpYbCRn/eg4QvfwSM4
+        uGDS8Uw+AHWYrDeBrRDV0aQ2rHWQ0eHgol7HMt2MlB1i/I0dDANqR5dT4mwH
+        i2lhsFG442ls5O4wkTMAH9k7msxFAw+SeQPw0cLjySTCeJjL4uACkEf/lrkV
+        tDz4a+a2Ffwmsnl0QTkKeqiUDAJHSo8l4OjqIQIBgSOvRxPs+D2WMaBA7tG/
+        R9jg78HfJBwOw9jwe7Ht8r3QG4CNNx9PxaHpgzyMggSwj+fwce6DPN4CuZwc
+        /+NR2LcTY/BhDwfkG7y7YZ/AFoUPfNyDY5erJQcTS7GHm6WNqbtl2m3CCzUG
+        Fkjm5Hi+bmmC0xKLIk93bqKnJpuumwQ/IQkIH+gQS+DCue74gjQ0gV9sYh93
+        Ntd5eq2CC6osCr/k6S8qesfTNXaS4fmARZGjnMk6glDw5NIcL1Wbzn1k5Cxv
+        yEXxg3K4gupLEZ9fm4TPpCDJLjLweBhpeFfU4akxfczmr4otrZwFD/fk+8kc
+        R0Rno3nbVg9OTtbr9dhWA61TO6l03ZhS2V+SdEsbzPkRD+Rb1flKkaPc3bk6
+        K3+LKJzfghcTEvAlAr59tFHCHDfL/5L/bzJOOBK3v8NkRDFrM/dd6AuVfEIu
+        J/HYpHVetYMg0Sef1EqJdpRg7jOORA+3VqpOPs7U5+RMDv/5T/LPf53eOpx2
+        JXtvPDxK/s2FIsOZQrPMpB1t2h+n7LPraaEpdXggmR8cnaLZmIjR9uAG9QGD
+        qtmUKaJt3elTzhyVTU2qwwOqnObBQXI2YCpMquhixlVtWpOaIvmfxBqenDRN
+        cZA8kLTU6sFR8ufkYCwuzo4VNoQNjrqkkpHpU3Nw6ovUDEuElW+L0zzeXKrZ
+        a7XUfcH+eedfp0kzrnASVbavTabHeYmtv32ssdL14UzdTpojyvnXo0M8PjyR
+        E+H33YwOL2h04qK6jat5NTq9lU+TQxs2nO6Suyckj2mh6eE/qb9oH6Wp6cp2
+        dDsZ/fTo+O7db+/cuX//+O7oX0enX7R/wpMZKiWdcqM9fvmstsYZOK03XOV6
+        jWd1ZPVrX9j/0vTg1slJMs2vOCA8HnWWuHjsKGpb+YzmvDr8JK9UhuU/LNUq
+        n5EjqTH2US018+RPf0q+pMaWc5C/VdkBNeYgTpnvtjDZwZGr6S80kcebF9nh
+        iNYEYY91NOY+dOwKQzexabHRpqPT3RnY7jA+AxfF3eeA9xD7u0tTUR53qivM
+        4NfT4R3C1pVt6DhvlwXc+n+71TONXqcAAA==
+    http_version: 
+  recorded_at: Thu, 09 Jul 2015 20:06:57 GMT
 recorded_with: VCR 2.9.3

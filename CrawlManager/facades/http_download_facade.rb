@@ -18,5 +18,22 @@ module Facades
         nil
       end
     end
+
+    def head
+      begin
+        Mechanize.new.head(@url)
+      rescue StandardError => e
+        $LOG.error e.message
+        $LOG.debug e.backtrace.join("\n")
+        nil
+      end
+    end
+
+    def valid_response?
+      response_code = head.code
+      !response_code.nil? &&
+      response_code.match(/4\d\d/).nil? &&
+      response_code.match(/5\d\d/).nil?
+    end
   end
 end
