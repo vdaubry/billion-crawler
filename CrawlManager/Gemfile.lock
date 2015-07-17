@@ -20,11 +20,8 @@ GEM
     bloomfilter-rb (2.1.1)
       redis
     builder (3.2.2)
-    byebug (4.0.5)
-      columnize (= 0.9.0)
     celluloid (0.16.0)
       timers (~> 4.0.0)
-    columnize (0.9.0)
     connection_pool (2.2.0)
     crack (0.4.2)
       safe_yaml (~> 1.0.0)
@@ -118,7 +115,6 @@ PLATFORMS
 DEPENDENCIES
   aws-sdk (~> 2.0.47)
   bloomfilter-rb (~> 2.1.1)
-  byebug (~> 4.0.5)
   dotenv (~> 2.0.1)
   factory_girl (~> 4.5.0)
   fastimage (~> 1.7.0)
