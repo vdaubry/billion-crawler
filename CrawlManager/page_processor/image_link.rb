@@ -11,5 +11,13 @@ module PageProcessor
       uri = URI.parse(@href)
       "#{uri.scheme}://#{uri.host}"
     end
+
+    def to_json
+      {
+        "src": @src,
+        "href": @href,
+        "scrapped_at": Time.now.to_s
+      }
+    end
   end
 end

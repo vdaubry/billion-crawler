@@ -14,6 +14,10 @@ module PageProcessor
       @dimension = sizes && sizes.max
     end
 
+    def extension
+      File.extname(URI.parse(@src).path)
+    end
+
     def known?
       @bloom_filter.include?(key: @src)
     end
@@ -23,7 +27,14 @@ module PageProcessor
     end
 
     def known!
-      @bloom_filter.insert(key: @url)
+      @bloom_filter.insert(key: @src)
+    end
+
+    def to_json
+      {
+        "src": @src,
+        "scrapped_at": Time.now.to_s
+      }
     end
   end
 end

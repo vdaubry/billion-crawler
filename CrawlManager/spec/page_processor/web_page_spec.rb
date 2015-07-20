@@ -2,19 +2,13 @@ require "spec_helper"
 
 describe PageProcessor::WebPage do
 
-  let(:web_page) { PageProcessor::WebPage.new(html: File.read("spec/fixtures/html_sample/google.fr.html"), base_url: "http://www.google.fr") }
+  let(:web_page) { PageProcessor::WebPage.new(html: File.read("spec/fixtures/html_sample/google.fr.html"), base_url: "http://www.google.fr", url: "http://www.google.fr/page") }
 
-  describe "all_images" do
-    it "returns images in page" do
-      web_page.all_images.should == ["http://www.google.fr/images/nav_logo195.png", "data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="]
-    end
-  end
 
-  describe "images" do
-    it "returns images with allowed extensions" do
-      images = ["http://www.google.fr/test.gif", "http://www.google.fr/test.jpeg", "http://www.google.fr/test.jpg", "http://www.google.fr/images/nav_logo195.png", "data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="]
-      web_page.stubs(:all_images).returns(images)
-      web_page.images.should == ["http://www.google.fr/test.jpeg", "http://www.google.fr/test.jpg", "http://www.google.fr/images/nav_logo195.png"]
+  describe "images", vcr: true do
+    it "returns valid images with allowed extensions" do
+      web_page = PageProcessor::WebPage.new(html: File.read("spec/fixtures/html_sample/lemonde.fr.html"), base_url: "http://www.lemonde.fr/", url: "http://www.lemonde.fr/")
+      web_page.images.map(&:src).should == ["http://s2.lemde.fr/image/2015/07/16/644x322/4686205_3_3305_file-d-attente-devant-le-distributeur-d-alpha_3b30b0438b6fba1bbd459fe383e30994.jpg"]
     end
   end
 

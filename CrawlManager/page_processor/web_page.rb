@@ -1,8 +1,9 @@
 module PageProcessor
   class WebPage
-    attr_reader :base_url
+    attr_reader :base_url, :url
 
-    def initialize(html:, base_url:)
+    def initialize(html:, base_url:, url:)
+      @url = url
       @html = Nokogiri::HTML(html)
       @base_url = base_url
     end
@@ -12,11 +13,7 @@ module PageProcessor
     end
 
     def images
-      images_with_extension = all_images.reject {|src| src.match(/(\.png|\.jpg|\.jpeg)/).nil? }
-      images_with_extension.select do |src|
-        image = Image.new(src: src)
-        PageProcessor::ImageValidator.new(image: image).valid?
-      end
+      all_images.select {|image|  PageProcessor::ImageValidator.new(image: image).valid? }
     end
 
     def images_already_seen!
@@ -33,8 +30,12 @@ module PageProcessor
 
     private
       def all_images
-        @all_images ||= @html.xpath("//img").map do |l|
-          SafeUri.join(base_url: @base_url, path: l['src'])
+        return @all_images  if @all_images
+
+        images_without_link = @html.xpath("//img").select {|l| l.parent.name!="a"}
+        @all_images = images_without_link.map do |l|
+          uri = SafeUri.join(base_url: @base_url, path: l['src'])
+          PageProcessor::Image.new(src: uri) if uri
         end.compact
       end
 

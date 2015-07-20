@@ -9,12 +9,8 @@ module PageProcessor
                "name": post_name,
                "url": post_url
            },
-           "image": {
-               "src": image.src,
-               "href": image.href,
-               "scrapped_at": Time.now.to_s
-           }.to_json
-      }
+           "image": image.to_json
+      }.to_json
     end
   end
 end
