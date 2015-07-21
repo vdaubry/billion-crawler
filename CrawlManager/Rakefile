@@ -22,6 +22,9 @@ namespace :debug do
   desc 'Add an URL from param to the frontier '
   task :crawl_url, :url do |t, args|
     Rules::Parser.new.read
+
+    puts "Empty Redis..."
+    $redis.flushall
     
     url = args[:url]
     puts "Add #{url} to queue"
